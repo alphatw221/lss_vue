@@ -1,9 +1,9 @@
 // import { createApp } from 'vue'
 // import App from './App.vue'
 // import vuetify from './plugins/vuetify'
-// import { loadFonts } from './plugins/webfontloader'
+import { loadFonts } from './plugins/webfontloader'
 
-// loadFonts()
+loadFonts()
 
 // createApp(App)
 //   .use(vuetify)
@@ -11,8 +11,8 @@
 
 
 import 'vuetify/styles' // Global CSS has to be imported
-
-
+// import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import '@mdi/font/css/materialdesignicons.css'
 
 import { createApp } from 'vue'
 // import App from './App.vue'
@@ -33,6 +33,7 @@ import {createRouter, createWebHashHistory} from 'vue-router'
 
 import TestPage1 from './pages/test/TestPage1.vue'
 import TestPage2 from './pages/test/TestPage2.vue'
+import TestPage3 from './pages/test/TestPage3.vue'
 
 // 2. Define some routes
 // Each route should map to a component.
@@ -40,7 +41,7 @@ import TestPage2 from './pages/test/TestPage2.vue'
 const routes = [
     { path: '/test_page1', component: TestPage1 },
     { path: '/test_page2', component: TestPage2 },
-
+    { path: '/test_page3', component: TestPage3 },
 
 ]
 

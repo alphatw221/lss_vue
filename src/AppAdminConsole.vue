@@ -1,8 +1,8 @@
 <template>
     <v-app>
-        <v-navigation-drawer app>
-            <!-- -->
-        </v-navigation-drawer>
+        <AdminConsoleNavigationDrawers/>
+        <!-- <v-navigation-drawer app>
+        </v-navigation-drawer> -->
 
         <v-app-bar app>
             <!-- -->
@@ -26,12 +26,17 @@
 </template>
 
 <script>
+
+import AdminConsoleNavigationDrawers from './components/AdminConsoleNavigationDrawers.vue'
+
 export default {
   name: 'TestApp',
   components: {
-    
+    AdminConsoleNavigationDrawers
   },
+  computed:{
 
+  },
   data: () => ({
     //
   }),
