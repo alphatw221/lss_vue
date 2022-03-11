@@ -51,6 +51,9 @@
 </template>
 
 <script>
+
+import { admin_login } from '@/api/user'
+
 export default {
   name: 'AdminConsoleNavigationDrawers',
   components: {
@@ -66,5 +69,20 @@ export default {
           { title: 'Admin', icon: 'mdi-gavel' ,route: '/test_page3'},
         ],
   }),
+  methods:{
+    login : (email,password)=>{
+      admin_login({"username":email,"password":password}).then(
+        response=>{
+          console.log(response)
+        }
+      ).catch(
+        err=>{
+          console.log(err)
+        }
+      ).catch(
+        err=>alert(err.message)
+      )
+    }
+  }
 }
 </script>

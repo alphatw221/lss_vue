@@ -31,6 +31,7 @@ const vuetify = createVuetify({
 
 import {createRouter, createWebHashHistory} from 'vue-router'
 
+import AdminLoginPage from './pages/AdminLoginPage.vue'
 import TestPage1 from './pages/test/TestPage1.vue'
 import TestPage2 from './pages/test/TestPage2.vue'
 import TestPage3 from './pages/test/TestPage3.vue'
@@ -39,6 +40,7 @@ import TestPage3 from './pages/test/TestPage3.vue'
 // Each route should map to a component.
 // We'll talk about nested routes later.
 const routes = [
+    { path: '/', component: AdminLoginPage},
     { path: '/test_page1', component: TestPage1 },
     { path: '/test_page2', component: TestPage2 },
     { path: '/test_page3', component: TestPage3 },
@@ -55,6 +57,11 @@ const router = createRouter({
 })
 
 
+//Vue 3 Axios
+// import axios from 'axios'
+// import VueAxios from 'vue-axios'
+
+// app.use(VueAxios, axios)
 app.use(vuetify)
 app.use(router)
 app.mount('#app')
