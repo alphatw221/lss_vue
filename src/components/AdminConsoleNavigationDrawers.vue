@@ -70,19 +70,6 @@ export default {
         ],
   }),
   methods:{
-    login : (email,password)=>{
-      admin_login({"username":email,"password":password}).then(
-        response=>{
-          console.log(response)
-        }
-      ).catch(
-        err=>{
-          console.log(err)
-        }
-      ).catch(
-        err=>alert(err.message)
-      )
-    }
   }
 }
 </script>
