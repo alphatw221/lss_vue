@@ -26,22 +26,54 @@ app.use(vuetify)
 import {createRouter, createWebHashHistory} from 'vue-router'
 
 import AdminLoginPage from './pages/AdminLoginPage.vue'
+import AdminConsolePage from './pages/AdminConsolePage.vue'
 import TestPage1 from './pages/test/TestPage1.vue'
 import TestPage2 from './pages/test/TestPage2.vue'
 import TestPage3 from './pages/test/TestPage3.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 const routes = [
     { path: '/', component: AdminLoginPage},
+    { path: '/admin_console_page', component:AdminConsolePage,
+      children:[
+        {
+          path:'user_subscription',
+          component:HelloWorld
+        }
+      ]
+    },
     { path: '/test_page1', component: TestPage1 },
     { path: '/test_page2', component: TestPage2 },
     { path: '/test_page3', component: TestPage3 },
-
 ]
+
 const router = createRouter({
-  // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
   history: createWebHashHistory(),
   routes, // short for `routes: routes`
 })
+//router middleware
+// import { authMiddleware } from "@/libs/routerMiddleware/auth.js";
+// import { addQueryGroupNameMiddleware } from "@/libs/routerMiddleware/addQueryGroupName.js";
+// import { checkUserGroupRoleMiddleware } from "@/libs/routerMiddleware/checkUserGroupRole";
+
+// router.beforeEach(async (to, from, next) => {
+
+//     // to.path
+//     // to.name
+//     for (let middleWare of [authMiddleware, addQueryGroupNameMiddleware, checkUserGroupRoleMiddleware]) {
+//         let  nextOption = await middleWare(to, from);
+//         if (nextOption.name || nextOption.path) {return next(nextOption)}
+//         else{
+//           next();
+//         }
+        
+//     }
+// });
+
+// router.afterEach(route => {
+//     // ViewUI.LoadingBar.finish();
+//     // ViewUI.Spin.hide();
+// });
 app.use(router)
 
 

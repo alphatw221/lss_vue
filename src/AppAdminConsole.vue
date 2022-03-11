@@ -19,9 +19,6 @@
 </template>
 
 <script>
-
-// import AdminConsoleNavigationDrawers from './components/AdminConsoleNavigationDrawers.vue'
-
 export default {
   name: 'TestApp',
   components: {
@@ -36,8 +33,11 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
 h3 {
   margin: 40px 0 0;
 }

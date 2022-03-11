@@ -52,7 +52,6 @@
 
 <script>
 
-import { admin_login } from '@/api/user'
 
 export default {
   name: 'AdminConsoleNavigationDrawers',
@@ -64,9 +63,9 @@ export default {
   },
   data: () => ({
     items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' ,route: '/test_page1'},
-          { title: 'Account', icon: 'mdi-account-box' ,route: '/test_page2'},
-          { title: 'Admin', icon: 'mdi-gavel' ,route: '/test_page3'},
+          { title: 'Dashboard', icon: 'mdi-view-dashboard' ,route: '/admin_console_page/user_subscription'},
+          { title: 'Account', icon: 'mdi-account-box' ,route: '/admin_console_page/user_subscription'},
+          { title: 'Admin', icon: 'mdi-gavel' ,route: '/admin_console_page/user_subscription'},
         ],
   }),
   methods:{
