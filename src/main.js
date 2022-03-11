@@ -22,35 +22,6 @@ const vuetify = createVuetify({
 app.use(vuetify)
 
 
-// vue-router
-import {createRouter, createWebHashHistory} from 'vue-router'
-
-import AdminLoginPage from './pages/AdminLoginPage.vue'
-import AdminConsolePage from './pages/AdminConsolePage.vue'
-import TestPage1 from './pages/test/TestPage1.vue'
-import TestPage2 from './pages/test/TestPage2.vue'
-import TestPage3 from './pages/test/TestPage3.vue'
-import HelloWorld from '@/components/HelloWorld.vue'
-
-const routes = [
-    { path: '/', component: AdminLoginPage},
-    { path: '/admin_console_page', component:AdminConsolePage,
-      children:[
-        {
-          path:'user_subscription',
-          component:HelloWorld
-        }
-      ]
-    },
-    { path: '/test_page1', component: TestPage1 },
-    { path: '/test_page2', component: TestPage2 },
-    { path: '/test_page3', component: TestPage3 },
-]
-
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes, // short for `routes: routes`
-})
 //router middleware
 import { authMiddleware } from "@/libs/routerMiddleware/auth.js";
 // import { addQueryGroupNameMiddleware } from "@/libs/routerMiddleware/addQueryGroupName.js";
@@ -73,7 +44,8 @@ router.beforeEach(async (to, from, next) => {
 // router.afterEach(route => {
 // });
 
-app.use(router)
+import router from './router';
+app.use(router);
 
 
 // vue3-cookies
