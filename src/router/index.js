@@ -2,10 +2,29 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 // import AdminLoginPage from './pages/AdminLoginPage.vue'
+// () =>import('@/libs/routerMiddleware/isAdminMiddleware')
+
+
+
+
+
+
+
 
 const routes = [
     { path: '/', component: () => import('@/pages/AdminLoginPage.vue') },
-    { path: '/admin_console_page', component: () => import('@/pages/AdminConsolePage.vue'),
+    { path: '/admin_console_page', 
+      component: () => import('@/pages/AdminConsolePage.vue'),
+      beforeEnter: (to,from) =>{
+        to;
+        from;
+        return true
+      },
+      // beforeEnter: (to,from)=>{
+      //   to;
+      //   from;
+      //   return false
+      // },
       children:[
         {
           path:'user_subscription',
@@ -29,25 +48,25 @@ const router = createRouter({
 //router middleware
 // import { authMiddleware } from "@/libs/routerMiddleware/auth.js";
 
-router.beforeEach(async (to, from, next) => {
+// router.beforeEach(async (to, from, next) => {
 
-    // to.path
-    // to.name
-    const isAdmin = false
-    if(!isAdmin && to.path != 'admin_console_page'){
-      return next(true)
-    }else{
-      next()
-    }
-    // for (let middleWare of [authMiddleware]) {
-    //     let  nextOption = await middleWare(to, from);
-    //     if (nextOption.name || nextOption.path) {return next(nextOption)}
-    //     else{
-    //       next();
-    //     }
+//     // to.path
+//     // to.name
+//     const isAdmin = false
+//     if(!isAdmin && to.path != 'admin_console_page'){
+//       return next(true)
+//     }else{
+//       next()
+//     }
+//     // for (let middleWare of [authMiddleware]) {
+//     //     let  nextOption = await middleWare(to, from);
+//     //     if (nextOption.name || nextOption.path) {return next(nextOption)}
+//     //     else{
+//     //       next();
+//     //     }
         
-    // }
-});
+//     // }
+// });
 
 // router.afterEach(route => {
 // });
