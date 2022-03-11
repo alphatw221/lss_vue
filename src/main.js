@@ -22,28 +22,9 @@ const vuetify = createVuetify({
 app.use(vuetify)
 
 
-//router middleware
-import { authMiddleware } from "@/libs/routerMiddleware/auth.js";
-// import { addQueryGroupNameMiddleware } from "@/libs/routerMiddleware/addQueryGroupName.js";
-// import { checkUserGroupRoleMiddleware } from "@/libs/routerMiddleware/checkUserGroupRole";
 
-router.beforeEach(async (to, from, next) => {
 
-    // to.path
-    // to.name
-    for (let middleWare of [authMiddleware]) {
-        let  nextOption = await middleWare(to, from);
-        if (nextOption.name || nextOption.path) {return next(nextOption)}
-        else{
-          next();
-        }
-        
-    }
-});
-
-// router.afterEach(route => {
-// });
-
+//Vue router
 import router from './router';
 app.use(router);
 

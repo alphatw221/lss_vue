@@ -24,4 +24,33 @@ const router = createRouter({
   routes, // short for `routes: routes`
 })
 
+
+
+//router middleware
+// import { authMiddleware } from "@/libs/routerMiddleware/auth.js";
+
+router.beforeEach(async (to, from, next) => {
+
+    // to.path
+    // to.name
+    const isAdmin = false
+    if(!isAdmin && to.path != 'admin_console_page'){
+      return next(true)
+    }else{
+      next()
+    }
+    // for (let middleWare of [authMiddleware]) {
+    //     let  nextOption = await middleWare(to, from);
+    //     if (nextOption.name || nextOption.path) {return next(nextOption)}
+    //     else{
+    //       next();
+    //     }
+        
+    // }
+});
+
+// router.afterEach(route => {
+// });
+
+
 export default router
