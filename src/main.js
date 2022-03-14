@@ -33,5 +33,17 @@ app.use(router);
 import VueCookies from 'vue3-cookies'
 app.use(VueCookies);
 
+//mitt (eventBus)
+import mitt from 'mitt'
+const eventBus = mitt()
+app.config.globalProperties.eventBus = eventBus
+
+
+//axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+app.use(VueAxios, axios)
+
 
 app.mount('#app')

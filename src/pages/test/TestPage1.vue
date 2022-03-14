@@ -3,15 +3,47 @@
     <h1>{{ msg }}</h1>
 
     <h1>Test Page 1</h1>
+
+    <DynamicFormDialog
+      :dialogName="'testDialog'"
+      :requestUrl="'/api/user/'"
+      :indexField="'id'"
+      :columns="columns"
+    />
+
+    <button @click="test">Test</button>
   </div>
 </template>
 
 <script>
+
+import DynamicFormDialog from '@/components/dialog/DynamicFormDialog.vue'
+
 export default {
   name: 'TestPage1',
+  components: {
+    DynamicFormDialog,
+  },
   props: {     //TestComponent properties here
     msg: String
   },
+  data(){
+    return{
+      columns:[
+        {key:'id', type:'text', label:'id', readonly:true},
+        {key:'name', type:'text', label:'name', readonly:true},
+        {key:'email', type:'text', label:'email', readonly:true},
+        {key:'type', type:'text', label:'type', readonly:true},
+        {key:'status', type:'text', label:'status', readonly:true}
+      ]
+    }
+  },
+  methods:{
+    test(){
+      this.eventBus.emit("showDynamicFormDialog",{'id':1})
+    }
+
+  }
 }
 </script>
 
