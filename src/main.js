@@ -22,7 +22,8 @@ const vuetify = createVuetify({
 app.use(vuetify)
 
 
-
+import store from './store';
+app.use(store)
 
 //Vue router
 import router from './router';

@@ -63,8 +63,8 @@ export default {
   },
   data: () => ({
     items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' ,route: '/admin_console_page/user_subscription'},
-          { title: 'Account', icon: 'mdi-account-box' ,route: '/admin_console_page/user_subscription'},
+          { title: 'Dashboard', icon: 'mdi-view-dashboard' ,route: '/admin_console_page/hello_world'},
+          { title: 'Account', icon: 'mdi-account-box' ,route: '/admin_console_page/hello_world'},
           { title: 'Admin', icon: 'mdi-gavel' ,route: '/admin_console_page/user_subscription'},
         ],
   }),

@@ -28,6 +28,10 @@ const routes = [
       children:[
         {
           path:'user_subscription',
+          component: () => import('@/components/AdminCodeManage.vue')
+        },
+        {
+          path:'hello_world',
           component: () => import('@/components/HelloWorld.vue')
         }
       ]
