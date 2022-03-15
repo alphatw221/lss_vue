@@ -1,25 +1,38 @@
 <template>
-    <div id="fb-root"></div>
+
+    <button @click="login">
+        Login with Facebook
+    </button>
+    <!-- <div id="fb-root"></div>
     <div class="fb-login-button" 
         data-width="" 
         data-size="large" 
         data-button-type="login_with" 
         data-layout="default" 
         data-auto-logout-link="false" 
-        data-use-continue-as="false"></div>
+        data-use-continue-as="false"></div> -->
 </template>
 
 <script>
-import { initFacebook } from "@/plugins/facebook_login";
 export default {
+    props:{
+        busName:String
+    },
     setup(){
-        initFacebook();
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
     },
     mounted() {
-        this.create_fb_login_button_script();
+        // this.insert_fb_login_button_script();
     },
     methods:{
-        create_fb_login_button_script(){
+        insert_fb_login_button_script(){
             let buttonScript = document.createElement('script')
             buttonScript.async=true
             buttonScript.defer=true
@@ -30,18 +43,16 @@ export default {
         },
         login(){
             window.FB.init({
-                appId: '967598017063136',   //TODO process.env
+                appId: process.env.VUE_APP_FB_APP_ID,   
                 cookie: true,
                 xfbml: true,
                 version: "v13.0",
             });
-            window.FB.login(function(response) {
-                if (response.status === 'connected') {
-
-                    // Logged into your webpage and Facebook.
-                } else {
-                    // The person is not logged into your webpage or we are unable to tell. 
-                }
+            window.FB.login(response => {
+                const payload = {
+                        'response':response
+                    }
+                this.eventBus.emit(this.busName, payload)
             });
 
         }
