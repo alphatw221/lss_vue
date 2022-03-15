@@ -12,17 +12,21 @@
     />
 
     <button @click="test">Test</button>
+
+    <FacebookLoginButton/>
   </div>
 </template>
 
 <script>
 
 import DynamicFormDialog from '@/components/dialog/DynamicFormDialog.vue'
+import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
 
 export default {
   name: 'TestPage1',
   components: {
     DynamicFormDialog,
+    FacebookLoginButton,
   },
   props: {     //TestComponent properties here
     msg: String
