@@ -1,18 +1,21 @@
 <template>
-  <table>
+    <h2> {{ tableName }} </h2>
+    <table>
         <thead>
-                <tr >
-                    <th v-for="column in columns" v-bind:key="column.key"></th>
-                </tr>
+            <tr >
+                <th v-for="column in columns" v-bind:key="column.key">
+                    {{column.name}}
+                </th>
+            </tr>
         </thead>
-        <tbody v-for="item in listItems" v-bind:key="item.id" >
-            <tr v-for="column in columns" v-bind:key="column.key">
-                <td v-html="item[column.key]">
+        <tbody>
+            <tr v-for="item in listItems" v-bind:key="item.id">
+                <td v-for="column in columns" v-bind:key="column.key">
+                    {{item[column.key]}}
                 </td>
             </tr>
         </tbody>
-</table>
-
+    </table>
 </template>
 
 <script>
@@ -29,25 +32,38 @@ export default {
             listItems:[
                 {
                     "id":1,
-                    "name":"test"
+                    "name":"test",
+                    "email":"123@email",
+                    "type":"asdf",
+                    "status":"1123"
                 },
                 {
                     "id":2,
-                    "name":"test2"
+                    "name":"test",
+                    "email":"123@email",
+                    "type":"asdf",
+                    "status":"1123"
                 },
             ],
         }
     },
     mounted(){
         this.eventBus.on("searchTable", payload => {
+            payload
             this.listItems=[
                 {
                     "id":3,
-                    "name":"test3"
+                    "name":"test",
+                    "email":"123@email",
+                    "type":"asdf",
+                    "status":"1123"
                 },
                 {
                     "id":4,
-                    "name":"test4"
+                    "name":"test",
+                    "email":"123@email",
+                    "type":"asdf",
+                    "status":"1123"
                 },
             ]
         });

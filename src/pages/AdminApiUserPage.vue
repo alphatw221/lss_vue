@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import SearchBar from "@/components/table/SearchBar.vue";
+import SearchBar from "@/components/bar/SearchBar.vue";
 import dynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
 import { list_user } from '@/api/user';
 

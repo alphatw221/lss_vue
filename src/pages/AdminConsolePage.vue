@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import AdminConsoleNavigationDrawers from '@/components/AdminConsoleNavigationDrawers.vue'
+import AdminConsoleNavigationDrawers from '@/components/navigation/AdminConsoleNavigationDrawers.vue'
 
 export default {
     name:"AdminConsolePage",

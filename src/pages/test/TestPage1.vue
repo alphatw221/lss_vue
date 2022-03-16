@@ -14,12 +14,16 @@
     <button @click="test">Test</button>
 
     <FacebookLoginButton :busName="'lssLogin'"/>
+
+
+    <DynamicTable :tableName="'testTable'" :columns="tableColumns" :requestUrl="''"/>
   </div>
 </template>
 
 <script>
 
 import DynamicFormDialog from '@/components/dialog/DynamicFormDialog.vue'
+import DynamicTable from '@/components/table/DynamicTable.vue'
 import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
 
 export default {
@@ -36,6 +40,7 @@ export default {
   },
   components: {
     DynamicFormDialog,
+    DynamicTable,
     FacebookLoginButton,
   },
   props: {     //TestComponent properties here
@@ -49,6 +54,13 @@ export default {
         {key:'email', type:'text', label:'email', readonly:true},
         {key:'type', type:'text', label:'type', readonly:true},
         {key:'status', type:'text', label:'status', readonly:true}
+      ],
+      tableColumns:[
+        {key:'id',  name:'id'},
+        {key:'name',  name:'name'},
+        {key:'email', name:'email'},
+        {key:'type', name:'type'},
+        {key:'status', name:'status'}
       ]
     }
   },

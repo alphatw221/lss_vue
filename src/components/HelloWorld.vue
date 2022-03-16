@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import SearchBar from "@/components/table/SearchBar.vue";
+import SearchBar from "@/components/bar/SearchBar.vue";
 import { useCookies } from "vue3-cookies";
 import {axiosInstance} from "@/libs/axiosClient";
 

@@ -1,12 +1,15 @@
 <template>
   <div>
+
     <select v-model="searchColumn" style="margin-right: 1rem;">
-      <option v-for="(column, index) in searchColumns" :key="index"
-              :value="column['value']">
-        {{column['label']}}
+      <option v-for="(column, index) in searchColumns" 
+        :key="index"
+        :value="column.value">
+        {{ column.label }}
       </option>
     </select>
-    <input v-model="keyword" @keyup.enter="search" placeholder="Search"/>
+
+    <input v-model="keyword" @change="search" placeholder="Search"/>
   </div>
 </template>
 
