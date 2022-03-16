@@ -30,7 +30,7 @@
 <script>
 import SearchBar from "@/components/table/SearchBar.vue";
 import { useCookies } from "vue3-cookies";
-import axiosClient from "@/libs/axiosClient";
+import {axiosInstance} from "@/libs/axiosClient";
 
   export default {
     components: { SearchBar },
@@ -54,7 +54,7 @@ import axiosClient from "@/libs/axiosClient";
     mounted() {
       this.accessToken = this.cookies.get("access_token");
 
-      axiosClient.get('/api/user/list', { 'headers': { 'Authorization': 'Bearer ' + this.accessToken } })
+      axiosInstance.get('/api/user/list', { 'headers': { 'Authorization': 'Bearer ' + this.accessToken } })
       .then(response => {
         this.userList = response.data;
         console.log(response.data);

@@ -80,7 +80,7 @@
           <v-btn
             color="blue-darken-1"
             text
-            @click="show = false"
+            @click="createApiUser"
           >
             Submit
           </v-btn>
@@ -95,6 +95,8 @@
 </template>
 
 <script>
+import { create_valid_api_user } from '@/api/user';
+
 export default {
     props:['dialogName', 'requestUrl', 'submitUrl', 'indexField', 'columns'],
     data(){
@@ -137,6 +139,30 @@ export default {
         },
         updateDataColumn(){
 
+        },
+        submit() {
+            if (this.dialogName == 'Create Account') {
+                this.createApiUser();
+            } else {
+                this.show = false;
+            }
+        },
+        createApiUser() {
+            if (this.detailData.name && this.validateEmail(this.detailData.email)) {
+                create_valid_api_user(this.detailData).then(response => {
+                    console.log(response);
+                    alert('create api user successful');
+                }).catch((error) => {
+                    console.log(error);
+                })
+            } else {
+                alert ('Please enter name or correct email !')
+            }
+            this.show = false;
+        },
+        validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
         }
     }
 

@@ -4,13 +4,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // import AdminLoginPage from './pages/AdminLoginPage.vue'
 // () =>import('@/libs/routerMiddleware/isAdminMiddleware')
 
-
-
-
-
-
-
-
 const routes = [
     { path: '/', component: () => import('@/pages/AdminLoginPage.vue') },
     { path: '/admin_console_page', 
@@ -22,8 +15,8 @@ const routes = [
       },
       children:[
         {
-          path:'user_subscription',
-          component: () => import('@/components/AdminCodeManage.vue')
+          path:'user',
+          component: () => import('@/components/ApiUser.vue')
         },
         {
           path:'hello_world',

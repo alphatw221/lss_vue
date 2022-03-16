@@ -37,7 +37,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="user in searchUser" :key="user.id" @click="showDetail(user.id)">
+          <tr v-for="user in searchUser" :key="user.id">
             <td>{{ user.id }}</td>
             <td>{{ user.name }}</td>
             <td>{{ user.email }}</td>
@@ -52,18 +52,13 @@
 
 <script>
 import SearchBar from "@/components/table/SearchBar.vue";
-import { useCookies } from "vue3-cookies";
-import axiosClient from "@/libs/axiosClient";
-import dynamicDialog from '@/components/dialog/DynamicFormDialog.vue'
+import dynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
+import { list_user } from '@/api/user';
 
 export default {
   components: { 
     dynamicDialog,
     SearchBar
-  },
-  setup() {
-    const { cookies } = useCookies();
-    return { cookies };
   },
   data() {
     return {
@@ -79,19 +74,13 @@ export default {
       requestUrl: undefined,
       submitUrl: undefined,
       columns:[
-        {key:'id', type:'text', label:'id', readonly: false},
         {key:'name', type:'text', label:'name', readonly: false},
         {key:'email', type:'text', label:'email', readonly: false},
-        {key:'type', type:'text', label:'type', readonly: false},
-        {key:'status', type:'text', label:'status', readonly: false}
       ]
     }
   },
   mounted() {
-    this.accessToken = this.cookies.get("access_token");
-
-    axiosClient.get('/api/user/list', { 'headers': { 'Authorization': 'Bearer ' + this.accessToken } })
-    .then(response => {
+    list_user().then(response => {
       this.userList = response.data;
       console.log(response.data);
     }).catch((error) => {
