@@ -2,9 +2,9 @@
     <v-app>
         <v-main>
             <v-dialog
-      v-model="show"
-      persistent
-    >
+                v-model="show"
+                persistent
+            >
 
       <v-card>
 
@@ -19,7 +19,7 @@
                 <input v-if="(column.type == 'text')" 
                     :label="column.label" 
                     :placeholder="column.label"
-                    :readonly="(column.readonly == true)?true:false"
+                    :readonly="(column.readonly == true) ? true : false"
                     v-model="detailData[column.key]"/>
 
                 <!-- <input 
@@ -96,7 +96,7 @@
 
 <script>
 export default {
-    props:['dialogName', 'requestUrl', 'indexField', 'columns'],
+    props:['dialogName', 'requestUrl', 'submitUrl', 'indexField', 'columns'],
     data(){
         return{
             show: false,
@@ -108,10 +108,14 @@ export default {
     },
     mounted(){
         this.eventBus.on("showDynamicFormDialog", item => {
-            
-            this.dataIndex = item[this.indexField]
-            this.getDetailData()
+            if (this.requestUrl) {
+                this.dataIndex = item[this.indexField]
+                this.getDetailData()
+            } else {
+                this.show = true;
+            }
         });
+        
     },
     unmounted(){
         this.eventBus.off("showDynamicFormDialog");
