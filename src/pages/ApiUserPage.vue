@@ -1,12 +1,13 @@
 <template>
-  <dynamicDialog
-    :dialogName="'Create Account'"
-    :requestUrl="requestUrl"
-    :submitUrl="submitUrl"
-    :indexField="'id'"
-    :columns="columns"
-  />
   <v-container>
+    <dynamicDialog
+      :dialogName="'Create Account'"
+      :requestUrl="requestUrl"
+      :submitUrl="submitUrl"
+      :indexField="'id'"
+      :columns="columns"
+    ></dynamicDialog>
+  
     <v-row no-gutters>
       <v-col cols="12" sm="6">
         <SearchBar 

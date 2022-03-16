@@ -16,7 +16,7 @@ const routes = [
       children:[
         {
           path:'user',
-          component: () => import('@/components/ApiUser.vue')
+          component: () => import('@/pages/ApiUserPage.vue')
         },
         {
           path:'hello_world',

@@ -1,11 +1,11 @@
 <template>
-  <SearchBar 
-    :search-columns="searchColumns"
-    @on-search="toSearch"
-    @on-clear="clearSearch">
-  </SearchBar>
-  <br>
-  <div id="demo">
+  <div>
+    <SearchBar 
+      :search-columns="searchColumns"
+      @on-search="toSearch"
+      @on-clear="clearSearch">
+    </SearchBar>
+    <br>
     <table class="table" id="myTable">
       <thead>
         <tr>
