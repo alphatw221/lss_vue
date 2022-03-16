@@ -12,17 +12,31 @@
     />
 
     <button @click="test">Test</button>
+
+    <FacebookLoginButton :busName="'lssLogin'"/>
   </div>
 </template>
 
 <script>
 
 import DynamicFormDialog from '@/components/dialog/DynamicFormDialog.vue'
+import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
 
 export default {
   name: 'TestPage1',
+  mounted(){
+      this.eventBus.on("lssLogin", payload => {
+          console.log('in bus')
+          console.log(payload.token)
+          
+      });
+  },
+  unmounted(){
+      this.eventBus.off("lssLogin");
+  },
   components: {
     DynamicFormDialog,
+    FacebookLoginButton,
   },
   props: {     //TestComponent properties here
     msg: String
@@ -40,7 +54,8 @@ export default {
   },
   methods:{
     test(){
-      this.eventBus.emit("showDynamicFormDialog",{'id':1})
+      console.log(process.env)
+      // this.eventBus.emit("showDynamicFormDialog",{'id':1})
     }
 
   }

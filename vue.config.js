@@ -8,6 +8,7 @@ module.exports = defineConfig({
 		}
   },
   devServer:{
-    proxy:'https://gipassl.algotech.app'
+    proxy:'https://gipassl.algotech.app',
+    https:true,
   }
 })

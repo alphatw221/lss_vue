@@ -20,11 +20,6 @@ const routes = [
         from;
         return true
       },
-      // beforeEnter: (to,from)=>{
-      //   to;
-      //   from;
-      //   return false
-      // },
       children:[
         {
           path:'user_subscription',
