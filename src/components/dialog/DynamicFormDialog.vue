@@ -2,9 +2,9 @@
     <v-app>
         <v-main>
             <v-dialog
-      v-model="show"
-      persistent
-    >
+                v-model="show"
+                persistent
+            >
 
       <v-card>
 
@@ -19,7 +19,7 @@
                 <input v-if="(column.type == 'text')" 
                     :label="column.label" 
                     :placeholder="column.label"
-                    :readonly="(column.readonly == true)?true:false"
+                    :readonly="(column.readonly == true) ? true : false"
                     v-model="detailData[column.key]"/>
 
                 <!-- <input 
@@ -80,7 +80,7 @@
           <v-btn
             color="blue-darken-1"
             text
-            @click="show = false"
+            @click="createApiUser"
           >
             Submit
           </v-btn>
@@ -95,8 +95,10 @@
 </template>
 
 <script>
+import { create_valid_api_user } from '@/api/user';
+
 export default {
-    props:['dialogName', 'requestUrl', 'indexField', 'columns'],
+    props:['dialogName', 'requestUrl', 'submitUrl', 'indexField', 'columns'],
     data(){
         return{
             show: false,
@@ -108,10 +110,14 @@ export default {
     },
     mounted(){
         this.eventBus.on("showDynamicFormDialog", item => {
-            
-            this.dataIndex = item[this.indexField]
-            this.getDetailData()
+            if (this.requestUrl) {
+                this.dataIndex = item[this.indexField]
+                this.getDetailData()
+            } else {
+                this.show = true;
+            }
         });
+        
     },
     unmounted(){
         this.eventBus.off("showDynamicFormDialog");
@@ -133,6 +139,30 @@ export default {
         },
         updateDataColumn(){
 
+        },
+        submit() {
+            if (this.dialogName == 'Create Account') {
+                this.createApiUser();
+            } else {
+                this.show = false;
+            }
+        },
+        createApiUser() {
+            if (this.detailData.name && this.validateEmail(this.detailData.email)) {
+                create_valid_api_user(this.detailData).then(response => {
+                    console.log(response);
+                    alert('create api user successful');
+                }).catch((error) => {
+                    console.log(error);
+                })
+            } else {
+                alert ('Please enter name or correct email !')
+            }
+            this.show = false;
+        },
+        validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
         }
     }
 

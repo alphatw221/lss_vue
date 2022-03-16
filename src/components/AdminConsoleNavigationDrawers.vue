@@ -65,7 +65,7 @@ export default {
     items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard' ,route: '/admin_console_page/hello_world'},
           { title: 'Account', icon: 'mdi-account-box' ,route: '/admin_console_page/hello_world'},
-          { title: 'Admin', icon: 'mdi-gavel' ,route: '/admin_console_page/user_subscription'},
+          { title: 'Admin', icon: 'mdi-gavel' ,route: '/admin_console_page/user'},
         ],
   }),
   methods:{

@@ -1,21 +1,26 @@
-import axiosClient from "@/libs/axiosClient";
-
-
-
+import { axiosInstance, axiosInstanceWithBearer } from "@/libs/axiosClient";
 
 export const admin_login = data => {
     console.log(data)
-    return axiosClient.post(`/token/`,data);
+    return axiosInstance.post(`/token/`,data);
 };
 
 export const retrieve_user = id => {
     console.log(id)
-    return axiosClient.get(`/user/${id}`);
+    return axiosInstanceWithBearer.get(`/user/${id}`);
 };
 
 export const update_user = (id,data) => {
     console.log(id)
-    return axiosClient.put(`/user/${id}`, data);
+    return axiosInstanceWithBearer.put(`/user/${id}`, data);
+};
+
+export const list_user = () => {
+    return axiosInstanceWithBearer.get('/api/user/list/');
+};
+
+export const create_valid_api_user = data => {
+    return axiosInstanceWithBearer.post('/api/user/create_valid_api_user/', data);
 };
 
 // export const whatever_post_api = data => {
