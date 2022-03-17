@@ -29,8 +29,8 @@ const routes = [
         
       ]
     },
-    { path: '/test_page1', component: () => import('@/pages/test/TestPage1.vue') },
-    // { path: '/test_page1', component: () => import('@/pages/SellerLoginPage.vue') },
+    // { path: '/test_page1', component: () => import('@/pages/test/TestPage1.vue') },
+    { path: '/test_page1', component: () => import('@/pages/SellerLoginPage.vue') },
     { path: '/test_page2', component: () => import('@/pages/test/TestPage2.vue') },
     { path: '/test_page3', component: () => import('@/pages/test/TestPage3.vue') },
 ]
