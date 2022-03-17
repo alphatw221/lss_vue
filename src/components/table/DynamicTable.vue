@@ -1,22 +1,38 @@
 <template>
 <v-container>
-
+    <DynamicDialog
+      :dialogName="'Edit'"
+      :requestUrl="''"
+      :submitUrl="submitUrl"
+      :indexField="'id'"
+      :columns="columns"
+      :type="'update'"
+    />
 
 <v-card>
 
-
     <v-table fixed-header height="300px">
         <thead>
-        <tr >
+        <tr>
             <th v-for="column in columns" v-bind:key="column.key">
                 {{column.name}}
             </th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
             <tr v-for="item in listItems" v-bind:key="item.id">
                 <td v-for="column in columns" v-bind:key="column.key">
                     {{item[column.key]}}
+                </td>
+                <td>
+                    <v-btn 
+                        color="primary"
+                        elevation="3"
+                        rounded
+                        height="1.5rem"
+                        @click="updateDetail('text')"
+                    >Edit</v-btn>
                 </td>
             </tr>
         </tbody>
@@ -41,8 +57,6 @@
     </table> -->
 
     <div class="text-center">
-        
-
         <v-pagination
             v-model="currentPage"
             v-bind:length="totalPage"
@@ -55,35 +69,23 @@
 
 <script>
 import { axiosInstanceWithBearer } from '@/libs/axiosClient'
+import DynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
 
 export default {
+    components: { DynamicDialog },
     props:{
-        tableName:String,
-        requestUrl:String,
-        columns:Array
+        tableName: String,
+        requestUrl: String,
+        columns: Array,
     },
     data(){
         return{
-            currentPage:1,
-            totalPage:1,
-            pageSize:20,
-
-            listItems:[
-                {
-                    "id":1,
-                    "name":"test",
-                    "email":"123@email",
-                    "type":"asdf",
-                    "status":"1123"
-                },
-                {
-                    "id":2,
-                    "name":"test",
-                    "email":"123@email",
-                    "type":"asdf",
-                    "status":"1123"
-                },
-            ],
+            currentPage: 1,
+            totalPage: 1,
+            pageSize: 10,
+            searchColumn: undefined,
+            keyword: undefined,
+            listItems: []
         }
     },
     watch:{
@@ -97,28 +99,15 @@ export default {
         // }
     },
     mounted(){
-        this.eventBus.on("searchTable", (searchColumn,keyword,pageSize) => {
-            this.currentPage=1
-            this.searchColumn=searchColumn
-            this.keyword=keyword
-            this.pageSize=pageSize
+        this.search();
+        
+        this.eventBus.on("searchTable", (payload) => {
+            this.currentPage = 1
+            this.searchColumn = payload.searchColumn
+            this.keyword = payload.keyword
+            this.pageSize = payload.pageSize
             this.search()
-            // this.listItems=[
-            //     {
-            //         "id":3,
-            //         "name":"test",
-            //         "email":"123@email",
-            //         "type":"asdf",
-            //         "status":"1123"
-            //     },
-            //     {
-            //         "id":4,
-            //         "name":"test",
-            //         "email":"123@email",
-            //         "type":"asdf",
-            //         "status":"1123"
-            //     },
-            // ]
+            
         });
         
     },
@@ -132,19 +121,26 @@ export default {
             .then(
                 response=>{
                     console.log(response)
-                    this.totalPage=response.data.count/this.pageSize
-                    this.listItems=response.data.results
+                    this.totalPage = parseInt(response.data.count / this.pageSize) == 0 ? 1 : parseInt(response.data.count / this.pageSize)
+                    this.listItems = response.data.results
                 }
             ).catch(
                 error=>{
                     console.log(error)
                 }
             )
+        },
+        updateDetail(id) {
+            this.submitUrl = '/api/user-subscription/create_user_subscription/';
+            this.eventBus.emit('updateDialog', {"id": id});
         }
     }
 }
 </script>
 
 <style>
+th, td {
+   font-size: 2rem; 
+}
 
 </style>

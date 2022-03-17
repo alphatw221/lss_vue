@@ -1,19 +1,18 @@
 <template>
   <v-container>
     <DynamicDialog
-      :dialogName="'Create Account'"
+      :dialogName="'Create User Subscription'"
       :requestUrl="''"
       :submitUrl="submitUrl"
       :indexField="'id'"
       :columns="createColumns"
       :type="'create'"
     />
-  
     <v-row no-gutters>
       <v-col cols="12" sm="9">
         <SearchBar 
           :searchColumns="searchColumns"
-        ></SearchBar>
+        />
       </v-col>
       <v-col cols="12" sm="3">
         <v-btn 
@@ -28,17 +27,16 @@
     </v-row>
     <DynamicTable
       :tableName="'test table'"
-      :requestUrl="'/api/user/search_list'"
+      :requestUrl="'/api/user-subscription/search_list'"
       :columns="tableColumns"
     ></DynamicTable>
   </v-container>
-  
 </template>
 
 <script>
 import SearchBar from "@/components/bar/SearchBar.vue";
 import DynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
-import DynamicTable from "@/components/table/DynamicTable.vue"
+import DynamicTable from "@/components/table/DynamicTable.vue";
 
 export default {
   components: { 
@@ -48,17 +46,19 @@ export default {
   },
   data() {
     return {
-      searchColumns: [ 'name', 'email', 'status' ],
+      searchColumns: [ 'name', 'remark', 'status' ],
       requestUrl: undefined,
       submitUrl: undefined,
       createColumns:[
         {key:'name', type:'text', label:'name', readonly: false},
-        {key:'email', type:'text', label:'email', readonly: false},
+        {key:'description', type:'text', label:'description', readonly: false},
+        {key:'remark', type:'text', label:'remark', readonly: false},
+        {key:'status', type:'text', label:'status', readonly: false},
       ],
       tableColumns:[
         {key:'id',  name:'id'},
         {key:'name',  name:'name'},
-        {key:'email', name:'email'},
+        {key:'remark', name:'remark'},
         {key:'status', name:'status'}
       ],
     }
@@ -71,14 +71,16 @@ export default {
   methods: {
     showDetail(id) {
       this.requestUrl = '/api/user/';
-      this.submitUrl = undefined;
       this.eventBus.emit('showDynamicFormDialog', {"id": id});
     },
     createDetail(id) {
-      this.submitUrl = '/api/user/create_valid_api_user/';
-      this.requestUrl = undefined;
+      this.submitUrl = '/api/user-subscription/create_user_subscription/';
       this.eventBus.emit('showDynamicFormDialog', {"id": id});
     }
   }
 }
 </script>
+
+<style>
+
+</style>

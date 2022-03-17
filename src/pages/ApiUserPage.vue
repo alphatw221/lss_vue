@@ -1,27 +1,27 @@
 <template>
   <v-container>
-    <dynamicDialog
+    <DynamicDialog
       :dialogName="'Create Account'"
       :requestUrl="requestUrl"
       :submitUrl="submitUrl"
       :indexField="'id'"
-      :columns="columns"
-    ></dynamicDialog>
+      :columns="createColumns"
+    />
   
     <v-row no-gutters>
-      <v-col cols="12" sm="6">
+      <v-col cols="12" sm="9">
         <SearchBar 
-          :search-columns="searchColumns"
+          :searchColumns="searchColumns"
           @on-search="toSearch"
           @on-clear="clearSearch">
         </SearchBar>  
       </v-col>
-      <v-col cols="12" sm="6">
+      <v-col cols="12" sm="3">
         <v-btn 
           color="primary"
           elevation="2"
           rounded
-          max-height="30"
+          max-height="4rem"
           @click="createDetail('text')"
         >Create</v-btn>
       </v-col>
@@ -52,29 +52,25 @@
 </template>
 
 <script>
-import SearchBar from "@/components/table/SearchBar.vue";
-import dynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
+import SearchBar from "@/components/bar/SearchBar.vue";
+import DynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
 import { list_user } from '@/api/user';
 
 export default {
   components: { 
-    dynamicDialog,
+    DynamicDialog,
     SearchBar
   },
   data() {
     return {
-      searchColumns: [
-        { value: 'name', label: 'Name' },
-        { value: 'email', label: 'Email' },
-        { value: 'status', label: 'Status' },
-      ],
+      searchColumns: [ 'name', 'email', 'status' ],
       userList: [],
       accessToken: '',
       search: '',
       searchOption: '',
       requestUrl: undefined,
       submitUrl: undefined,
-      columns:[
+      createColumns:[
         {key:'name', type:'text', label:'name', readonly: false},
         {key:'email', type:'text', label:'email', readonly: false},
       ]

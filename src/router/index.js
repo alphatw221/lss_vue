@@ -19,9 +19,14 @@ const routes = [
           component: () => import('@/pages/AdminApiUserPage.vue')
         },
         {
+          path:'user_subscription',
+          component: () => import('@/pages/AdminApiUserSubscription.vue')
+        },
+        {
           path:'hello_world',
           component: () => import('@/components/HelloWorld.vue')
         }
+        
       ]
     },
     { path: '/test_page1', component: () => import('@/pages/test/TestPage1.vue') },

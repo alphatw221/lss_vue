@@ -3,12 +3,12 @@
   <v-card>
     <v-container>
       <v-row>
-
         <v-col cols=2>
 
           <v-select
             v-model="pageSize"
-            :items="[20,50,100]"
+            :items="[10, 20, 50]"
+            @keyup="search"
             dense
             filled
             label="Page Size"
@@ -20,8 +20,6 @@
           <v-select
             v-model="searchColumn"
             :items="searchColumns"
-            item-text="text"
-            item-value="value"
             label="Search Column"
             >
           </v-select>
@@ -46,8 +44,6 @@
           v-model="keyword"
         ></v-text-field>
       </v-col>
-      
-
 
       </v-row>
       
@@ -79,16 +75,8 @@
 
     <!-- </v-row> -->
   </v-card>
-  </v-container>
-  <div>
-
-    
-
-    
-
-    
-
-  </div>
+</v-container>
+  
 </template>
 
 <script>
@@ -102,11 +90,13 @@
     },
     data() {
       return {
-        // searchColumn: this.searchColumns[0].value,
-        searchColumn:undefined,
+        page: 1,
+        pageSize: 10,
+        searchColumn: undefined,
         keyword: undefined,
-        pageSize:20
       }
+    },
+    mounted() {
     },
     watch: {
       searchColumn() {
@@ -115,7 +105,8 @@
     },
     methods: {
       search() {
-        console.log("search")
+        this.eventBus.emit("searchTable", {searchColumn: this.searchColumn, keyword: this.keyword, pageSize: this.pageSize})
+        // console.log("search")
         // if (this.validSearch()) {
         //     const searchData = {
         //     column: this.searchColumn,
