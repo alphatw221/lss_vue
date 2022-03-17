@@ -1,5 +1,9 @@
 <template>
-  <div class="test_page1">
+  <v-app>
+    <v-container>
+
+    
+    <div class="test_page1">
     <h1>{{ msg }}</h1>
 
     <h1>Test Page 1</h1>
@@ -15,9 +19,12 @@
 
     <FacebookLoginButton :busName="'lssLogin'"/>
 
-
+    <SearchBar :searchColumns="searchColumns"/>
     <DynamicTable :tableName="'testTable'" :columns="tableColumns" :requestUrl="''"/>
   </div>
+
+    </v-container>
+  </v-app>
 </template>
 
 <script>
@@ -25,7 +32,7 @@
 import DynamicFormDialog from '@/components/dialog/DynamicFormDialog.vue'
 import DynamicTable from '@/components/table/DynamicTable.vue'
 import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
-
+import SearchBar from '@/components/bar/SearchBar.vue'
 export default {
   name: 'TestPage1',
   mounted(){
@@ -42,6 +49,7 @@ export default {
     DynamicFormDialog,
     DynamicTable,
     FacebookLoginButton,
+    SearchBar
   },
   props: {     //TestComponent properties here
     msg: String
@@ -54,6 +62,11 @@ export default {
         {key:'email', type:'text', label:'email', readonly:true},
         {key:'type', type:'text', label:'type', readonly:true},
         {key:'status', type:'text', label:'status', readonly:true}
+      ],
+      searchColumns:[
+        { value: 'name', text: 'Name' },
+        { value: 'email', text: 'Email' },
+        { value: 'status', text: 'Status' },
       ],
       tableColumns:[
         {key:'id',  name:'id'},

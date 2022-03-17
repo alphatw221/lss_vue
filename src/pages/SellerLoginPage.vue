@@ -1,16 +1,7 @@
 <template>
     <v-app>
-        <v-main>
-            <!-- <v-carousel :show-arrows="false" hide-delimiters> -->
-            <v-carousel :show-arrows="false" >
-                    <v-carousel-item
-                    v-for="(item,i) in carousel_items"
-                    :key="i"
-                    :src="item.src"
-                    ></v-carousel-item>
-            </v-carousel>
 
-        </v-main>
+        
     </v-app>
     
 
