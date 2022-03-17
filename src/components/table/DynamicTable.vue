@@ -1,14 +1,5 @@
 <template>
 <v-container>
-    <DynamicDialog
-      :dialogName="'Edit'"
-      :requestUrl="''"
-      :submitUrl="submitUrl"
-      :indexField="'id'"
-      :columns="columns"
-      :type="'update'"
-    />
-
 <v-card>
 
     <v-table fixed-header height="300px">
@@ -31,30 +22,13 @@
                         elevation="3"
                         rounded
                         height="1.5rem"
-                        @click="updateDetail('text')"
+                        @click="showEditFormDialog(item.id)"
                     >Edit</v-btn>
                 </td>
             </tr>
         </tbody>
     </v-table>
 
-    <!-- <h2> {{ tableName }} </h2>
-    <table>
-        <thead>
-            <tr >
-                <th v-for="column in columns" v-bind:key="column.key">
-                    {{column.name}}
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="item in listItems" v-bind:key="item.id">
-                <td v-for="column in columns" v-bind:key="column.key">
-                    {{item[column.key]}}
-                </td>
-            </tr>
-        </tbody>
-    </table> -->
 
     <div class="text-center">
         <v-pagination
@@ -69,10 +43,8 @@
 
 <script>
 import { axiosInstanceWithBearer } from '@/libs/axiosClient'
-import DynamicDialog from '@/components/dialog/DynamicFormDialog.vue';
 
 export default {
-    components: { DynamicDialog },
     props:{
         tableName: String,
         requestUrl: String,
@@ -92,11 +64,6 @@ export default {
         currentPage(){
             this.search()
         }
-    },
-    computed:{
-        // totalPage(){
-
-        // }
     },
     mounted(){
         this.search();
@@ -130,9 +97,8 @@ export default {
                 }
             )
         },
-        updateDetail(id) {
-            this.submitUrl = '/api/user-subscription/create_user_subscription/';
-            this.eventBus.emit('updateDialog', {"id": id});
+        showEditFormDialog(item_id) {
+            this.eventBus.emit('showEditFormDialog',{id:item_id})
         }
     }
 }

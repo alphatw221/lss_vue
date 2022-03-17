@@ -26,15 +26,6 @@
         </v-col>
       
       <v-spacer/>
-      <!-- <v-autocomplete
-        v-model="searchColumn"
-        :items="searchColumns"
-        item-text="label"
-        item-value="value"
-        dense
-        filled
-        label="Search Column"
-      ></v-autocomplete> -->
 
       <v-col cols=6>
         <v-text-field
@@ -48,32 +39,7 @@
       </v-row>
       
     </v-container>
-    <!-- <v-row> -->
-
-        <!-- <label for="page_size">Page Size: </label>
-        <select name="page_size" v-model="pageSize" >
-            <option value=20>20</option>
-            <option value=50>50</option>
-            <option value=100>100</option>
-        </select>
-
-        <label for="search_column">Search Column: </label>
-        <select v-model="searchColumn" style="margin-right: 1rem;">
-          <option v-for="(column, index) in searchColumns" 
-            :key="index"
-            :value="column.value">
-            {{ column.label }}
-          </option>
-        </select> -->
-
-        <!-- <input v-model="keyword" @change="search" placeholder="Search"/> -->
-        <!-- <v-text-field
-          placeholder="Search"
-          @change="search"
-          v-model="keyword"
-        ></v-text-field> -->
-
-    <!-- </v-row> -->
+    
   </v-card>
 </v-container>
   
@@ -96,8 +62,6 @@
         keyword: undefined,
       }
     },
-    mounted() {
-    },
     watch: {
       searchColumn() {
         this.search();
@@ -106,21 +70,7 @@
     methods: {
       search() {
         this.eventBus.emit("searchTable", {searchColumn: this.searchColumn, keyword: this.keyword, pageSize: this.pageSize})
-        // console.log("search")
-        // if (this.validSearch()) {
-        //     const searchData = {
-        //     column: this.searchColumn,
-        //     keyword: this.keyword
-        //   };
-        //   this.$emit('on-search', searchData);
-        // } else if (!this.keyword) {
-        //   this.$emit('on-clear');
-        // }
-      },
-      validSearch() {
-        const hasSearchColumn = !!this.searchColumn;
-        const hasKeyword = !!this.keyword;
-        return hasSearchColumn && hasKeyword;
+        
       },
     }
   }

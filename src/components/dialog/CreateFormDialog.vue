@@ -98,79 +98,35 @@
 import { axiosInstanceWithBearer } from "@/libs/axiosClient";
 
 export default {
-    props:['dialogName', 'requestUrl', 'submitUrl', 'indexField', 'columns', 'type'],
+    props:['dialogName', 'requestUrl', 'columns'],
     data(){
         return{
             show: false,
             detailData:{},
         }
     },
-    created(){
-        
-    },
     mounted(){
-        this.eventBus.on("showDynamicFormDialog", item => {
-            if (this.requestUrl) {
-                this.dataIndex = item[this.indexField]
-                this.getDetailData()
-            } else {
-                this.show = true;
-            }
+        this.eventBus.on("showCreateFormDialog", () => {
+            this.show = true
         });
-
-        this.eventBus.on("updateDialog", item => {
-            item;
-            this.show = true;
-        });
-        
     },
     unmounted(){
-        this.eventBus.off("showDynamicFormDialog");
-        this.eventBus.off("updateDialog");
+        this.eventBus.off("showCreateFormDialog");
     },
     methods:{
-        getDetailData(){
-            this.axios.get(this.requestUrl + '/' + this.dataIndex)
-            .then(res => {
-                this.show = true;
-                this.detailData = res.data;
-            })
-            .catch(error => {
-                console.log(error)
-                // errorHelper.handle(error);
-            })
-        },
-        updateDetailData(){
-
-        },
-        updateDataColumn(){
-
-        },
         submit() {
-            if (this.type == 'create') {
-                if ('email' in this.detailData && !this.validateEmail(this.detailData.email)) {
-                    alert('Please enter correct email !')
-                    return
-                }
-                axiosInstanceWithBearer.post(this.submitUrl, this.detailData).then(response => {
+            axiosInstanceWithBearer.post(this.requestUrl, this.detailData).then(response => {
                     console.log(response);
                     alert('create successful');
                 }).catch((error) => {
                     console.log(error);
                 })
                 this.show = false;
-            }
-            
         },
-        validateEmail(email) {
-            var re = /\S+@\S+\.\S+/;
-            return re.test(email);
-        }
     }
 
 }
 
-// columns = [{"key":"","label":"","type":""}]
 
 </script>
 
