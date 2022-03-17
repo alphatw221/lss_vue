@@ -1,11 +1,40 @@
 <template>
+
+
     <v-app>
+        <!-- background carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" >
+                    <img v-bind:src="carousel_items[0].src" class="d-block w-100" alt="">
+                </div>
 
-        
+                <div class="carousel-item" v-for="(item,index) in carousel_items" v-bind:key="index">
+                    <img v-bind:src="carousel_items[1].src" class="d-block w-100" alt="">
+                </div>
+            </div>
+        </div>
+
+        <v-container class="full" >
+            
+                <v-card class="login_block">
+                        <h3 class="login-title">
+                            Login
+                        </h3>
+                        <div class="login-button-section">
+                            <FacebookLoginButton/>
+                        </div>
+                        
+                        <h6 class="browser-reminder">
+                            Please use Google Chrome browser for better experience.
+                        </h6>
+                    
+                </v-card>
+            
+           
+            
+        </v-container>
     </v-app>
-    
-
-
 </template>
 
 
@@ -13,23 +42,24 @@
 <script>
 
 // import {admin_login} from '@/api/user'
-
+// import seller_login from '@api/user'
+import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
 export default {
     name:"SellerLoginPage",
     data() {
         return {
             carousel_items: [
                 {
-                    src: "@/assets/image/login/carousel-1.jpg",
+                    src: require("@/assets/login/new-lss-carousel-1.jpg"),
                 },
                 {
-                    src: "@/assets/image/login/carousel-2.jpg",
-                },
-                {
-                    src: "@/assets/image/login/carousel-3.jpg",
-                },
+                    src: require("@/assets/login/new-lss-carousel-2.jpg"),
+                }
             ],
         }
+    },
+    components:{
+        FacebookLoginButton
     },
     methods:{
         // login(){
@@ -54,4 +84,75 @@ export default {
 
 <style>
 
+.background{
+    width: 100%; height: 100%;
+}
+/* keeps carousel behind all content */
+.carousel { z-index: -99; } 
+.carousel-item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.login_block {
+    /* background-color: rgba(255, 255, 255, 0.5) !important;
+    border-color: white !important;
+    margin-top: 35vh;
+    margin-left: 35vh;
+    margin-right: 35vh;
+    padding: 5vh; */
+
+    width: 340px;
+
+    margin: 35vh auto;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 0.25rem
+    
+}
+
+.login-title{
+    text-align: center;
+    margin:10px;
+    color: #474747 !important;
+}
+
+
+.login-button-section{
+    text-align: center;
+    margin:10px;
+}
+
+.browser-reminder{
+    text-align: center;
+    margin:10px;
+    color: rgb(187, 14, 14) !important;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.full{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+}
 </style>

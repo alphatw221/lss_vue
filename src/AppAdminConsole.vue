@@ -1,5 +1,6 @@
 <template>
-  <router-view></router-view>
+    <router-view></router-view>
+  
     <!-- <v-app>
         <AdminConsoleNavigationDrawers/>
         <v-app-bar app>
@@ -38,6 +39,7 @@ export default {
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
+
 h3 {
   margin: 40px 0 0;
 }
@@ -52,4 +54,7 @@ li {
 a {
   color: #42b983;
 }
+
+
+
 </style>
