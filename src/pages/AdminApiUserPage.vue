@@ -14,23 +14,18 @@
       :columns="editColumns"
     />
 
-    <v-row no-gutters>
-      <v-col cols="12" sm="9">
-        <SearchBar 
-          :searchColumns="searchColumns"
-        ></SearchBar>
-      </v-col>
+    
+    <SearchBar 
+      :searchColumns="searchColumns"
+    ></SearchBar>
 
-      <v-col cols="12" sm="3">
-        <v-btn 
-          elevation="3"
-          height="3rem"
-          @click="showCreateFormDialog()"
-          style="margin: 3.5rem 0 0 4rem"
-        >Create</v-btn>
-      </v-col>
-    </v-row>
-
+    <div class="create_button" >
+      <v-btn 
+        height="3rem"
+        @click="showCreateFormDialog()"
+      >Create</v-btn>
+    </div>
+    
     <DynamicTable
       :tableName="'User Table'"
       :requestUrl="'/api/user/search_list'"
@@ -79,3 +74,11 @@ export default {
   }
 }
 </script>
+
+<style >
+.create_button {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 30px;
+}
+</style>

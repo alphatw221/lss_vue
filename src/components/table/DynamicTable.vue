@@ -1,8 +1,8 @@
 <template>
 <v-container>
-<v-card>
+<v-card >
 
-    <v-table fixed-header height="300px">
+    <v-table height="500">
         <thead>
         <tr>
             <th v-for="column in columns" v-bind:key="column.key">

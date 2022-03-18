@@ -6,11 +6,11 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" >
-                    <img v-bind:src="carousel_items[0].src" class="d-block w-100" alt="">
+                    <img v-bind:src="carousel_items[0].src" class="d-block w-100 h-100" alt="">
                 </div>
 
-                <div class="carousel-item" v-for="(item,index) in carousel_items" v-bind:key="index">
-                    <img v-bind:src="carousel_items[1].src" class="d-block w-100" alt="">
+                <div class="carousel-item" >
+                    <img v-bind:src="carousel_items[1].src" class="d-block w-100 h-100" alt="">
                 </div>
             </div>
         </div>
@@ -88,19 +88,36 @@ export default {
     width: 100%; height: 100%;
 }
 /* keeps carousel behind all content */
-.carousel { z-index: -99; } 
+.carousel { 
+    z-index: -99;
+    height: 100%;
+    } 
+    
 .carousel-item {
     position: fixed; 
     /* width: 100%;  */
-    height: 100%;
-    -webkit-transition: opacity 1s;
+    /* height: 100%; */
+    /* -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -ms-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
     background-repeat: no-repeat;
 	background-size: cover;
+    background-size: 100% 100%;
+	height: 100%;
+    width: auto; */
+
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
+
 
 
 .login_block {
