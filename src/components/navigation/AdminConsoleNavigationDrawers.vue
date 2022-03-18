@@ -21,7 +21,7 @@
       <v-list>
 
         <v-list-item>
-          <v-row>
+          <v-row >
             <img v-bind:src="lss_icon" alt="" width="60" height="20"/>
             
             <h6>LSS Admin Console</h6>
@@ -84,3 +84,16 @@ export default {
   }
 }
 </script>
+
+<style >
+.v-navigation-drawer  {
+  background-color: dimgrey;
+}
+.v-list{
+  background-color: dimgrey;
+}
+.v-list .v-list-item{
+  background-color: dimgrey;
+}
+
+</style>
