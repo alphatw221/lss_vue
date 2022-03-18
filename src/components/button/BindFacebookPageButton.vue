@@ -38,7 +38,7 @@ export default {
             console.log('checkloginstate')
             window.FB.getLoginStatus(response=>{
                 if (response.status === 'connected') {
-                    const payload = {'token':response.authResponse.accessToken}
+                    const payload = {'accessToken':response.authResponse.accessToken}
                     this.eventBus.emit(this.busName,payload)
                 } 
             });
@@ -66,8 +66,6 @@ export default {
         //         // }
         //         window.FB.logout();
         //     },{scope: 'public_profile,email'});
-            
-
         // }
     }
 }

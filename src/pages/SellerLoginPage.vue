@@ -22,7 +22,13 @@
                             Login
                         </h3>
                         <div class="login-button-section">
-                            <FacebookLoginButton/>
+                            <div style="margin: 10px 0px">
+                                <FacebookLoginButton/>
+                            </div>
+                            <div style="margin: 10px 0px;">
+                                <GoogleLoginButton/>
+                            </div>
+                            
                         </div>
                         
                         <h6 class="browser-reminder">
@@ -44,6 +50,9 @@
 // import {admin_login} from '@/api/user'
 // import seller_login from '@api/user'
 import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
+
+import GoogleLoginButton from '@/components/button/GoogleLoginButton.vue'
+
 export default {
     name:"SellerLoginPage",
     data() {
@@ -59,7 +68,8 @@ export default {
         }
     },
     components:{
-        FacebookLoginButton
+        FacebookLoginButton,
+        GoogleLoginButton
     },
     methods:{
         // login(){
