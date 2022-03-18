@@ -91,7 +91,8 @@ export default {
 .carousel { z-index: -99; } 
 .carousel-item {
     position: fixed; 
-    width: 100%; height: 100%;
+    /* width: 100%;  */
+    height: 100%;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -ms-transition: opacity 1s;

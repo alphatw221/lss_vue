@@ -19,7 +19,18 @@
          -->
 
       <v-list>
-        <v-list-item prepend-icon="mdi-view-dashboard" title=" LSS Admin Console"></v-list-item>
+
+        <v-list-item>
+          <v-row>
+            <img v-bind:src="lss_icon" alt="" width="60" height="20"/>
+            
+            <h6>LSS Admin Console</h6>
+          </v-row>
+        </v-list-item>
+
+        <v-devider ></v-devider>
+        <v-devider></v-devider>
+
         <v-list-item
           v-for="item in items"
           :key="item.title"
@@ -67,6 +78,7 @@ export default {
           { title: 'User Subscription', icon: 'mdi-view-dashboard' ,route: '/admin_console_page/user_subscription'},
           { title: 'Dashboard', icon: 'mdi-gavel' ,route: '/admin_console_page/hello_world'},
         ],
+    lss_icon:require("@/assets/lss-logo/logo_wh.png")
   }),
   methods:{
   }

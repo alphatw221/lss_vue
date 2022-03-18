@@ -1,5 +1,8 @@
 <template>
     
+
+    
+<!--     
     <div id="login-page" class="row">
     <div class="col s12 m6 l4 z-depth-4 card-panel border-radius-6 login-card bg-opacity-8">
         <form class="login-form" method="POST" action="">
@@ -60,8 +63,46 @@
         </div>
         </form>
     </div>
-    </div>
+    </div> -->
+    <v-app>
+    <div id="login-page" >
+    
+    <v-container class="full" >
+            
+                <v-card class="login_block">
+                        <h3 class="login-title">
+                            Please Login
+                        </h3>
+                        <div class="login-button-section">
+                            
+                            <v-text-field
+                                label="Email"
+                                @keyup.enter="login"
+                                v-model="loginForm.username"
+                            ></v-text-field>
 
+                            <v-text-field
+                                label="Password"
+                                @keyup.enter="login"
+                                v-model="loginForm.password"
+                            ></v-text-field>
+
+                        </div>
+                        
+                        <div class="login-button" >
+                            <v-btn @click="login">
+                                Login
+                            </v-btn>
+                        </div>
+                    
+                </v-card>
+            
+           
+            
+        </v-container>
+    </div>
+    </v-app>
+    
 </template>
 
 
@@ -75,14 +116,14 @@ export default {
     data() {
         return {
            loginForm:{
-                useremail:"",
+                username:"",
                 password:"",
             },
         }
     },
     methods:{
         login(){
-            admin_login({"username":this.loginForm.useremail,"password":this.loginForm.password}).then(
+            admin_login({"username":this.loginForm.username,"password":this.loginForm.password}).then(
                 response=>{
                 console.log(response)
                 this.$cookies.set("access_token", response.data.access)
@@ -102,25 +143,66 @@ export default {
 </script>
 
 <style>
-/* .login-bg{
-	background-image: url("@/assets/image/flat-bg.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-} */
+
 #login-page{
-    background-image: url("@/assets/image/flat-bg.jpeg");
+    background-image: url("@/assets/login/carousel-2.jpg");
     background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-
-
-}
-#login-page .card-panel.border-radius-6.login-card{
-    margin-left: 0 !important;
+    background-size: 100% 100%;
+	height: 100%;
+    width: auto;
 }
 
 
+
+
+
+
+
+
+.login_block {
+
+    width: 340px;
+
+    margin: 35vh auto;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 0.25rem
+    
+}
+
+.login-title{
+    text-align: center;
+    margin:10px;
+    color: #474747 !important;
+}
+
+
+.login-button-section{
+    text-align: center;
+    margin:10px;
+}
+
+.login-button{
+    text-align: center;
+    margin:10px;
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.full{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+#app {
+    height: 100%;
+}
 </style>

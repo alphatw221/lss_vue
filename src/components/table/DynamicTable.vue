@@ -8,19 +8,19 @@
             <th v-for="column in columns" v-bind:key="column.key">
                 {{column.name}}
             </th>
-            <th></th>
+            <th>
+                Edit
+            </th>
         </tr>
         </thead>
         <tbody>
             <tr v-for="item in listItems" v-bind:key="item.id">
-                <td v-for="column in columns" v-bind:key="column.key">
-                    {{item[column.key]}}
+                <td v-for="column in columns" v-bind:key="column.key" >
+                    {{column.is_field??item[column.key]}}
                 </td>
                 <td>
                     <v-btn 
-                        color="primary"
                         elevation="3"
-                        rounded
                         height="1.5rem"
                         @click="showEditFormDialog(item.id)"
                     >Edit</v-btn>

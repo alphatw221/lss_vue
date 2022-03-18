@@ -22,9 +22,7 @@
 
       <v-col cols="12" sm="3">
         <v-btn 
-          color="primary"
           elevation="3"
-          rounded
           height="3rem"
           @click="showCreateFormDialog()"
           style="margin: 3.5rem 0 0 4rem"
