@@ -1,34 +1,44 @@
 <template>
-  <div class="test_page2">
-    <h1>{{ msg }}</h1>
+    <v-app>
+        <ConsoleNavigationDrawers/>
 
-    <h1>Test Page 2</h1>
-  </div>
+        <!-- <v-app-bar app>
+        </v-app-bar> -->
+
+        <!-- Sizes your content based upon application components -->
+        <v-main>
+
+            <!-- Provides the application the proper gutter -->
+            <v-container fluid>
+
+            <!-- If using vue-router -->
+            <router-view></router-view>
+            </v-container>
+        </v-main>
+
+        <v-footer app>
+        </v-footer>
+    </v-app>
 </template>
 
 <script>
+import ConsoleNavigationDrawers from '@/components/navigation/ConsoleNavigationDrawers.vue'
+
 export default {
-  name: 'TestPage2',
-  props: {     //TestComponent properties here
-    msg: String
-  },
+    name:"AdminConsolePage",
+    data() {
+        return {
+        }
+    },
+    components: {
+        ConsoleNavigationDrawers,
+    },
+    methods:{
+       
+    }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style>
+
 </style>

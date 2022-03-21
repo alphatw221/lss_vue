@@ -13,7 +13,6 @@
       :indexField="'id'"
       :columns="editColumns"
     />
-
     
     <SearchBar 
       :searchColumns="searchColumns"

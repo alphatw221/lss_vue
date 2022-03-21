@@ -5,9 +5,9 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // () =>import('@/libs/routerMiddleware/isAdminMiddleware')
 
 const routes = [
-    { path: '/', component: () => import('@/pages/AdminLoginPage.vue') },
+    { path: '/', component: () => import('@/pages/admin/AdminLoginPage.vue') },
     { path: '/admin_console_page', 
-      component: () => import('@/pages/AdminConsolePage.vue'),
+      component: () => import('@/pages/admin/AdminConsolePage.vue'),
       beforeEnter: (to,from) =>{
         to;
         from;
@@ -16,11 +16,11 @@ const routes = [
       children:[
         {
           path:'user',
-          component: () => import('@/pages/AdminApiUserPage.vue')
+          component: () => import('@/pages/admin/AdminApiUserPage.vue')
         },
         {
           path:'user_subscription',
-          component: () => import('@/pages/AdminApiUserSubscription.vue')
+          component: () => import('@/pages/admin/AdminApiUserSubscription.vue')
         },
         {
           path:'hello_world',
