@@ -18,9 +18,6 @@
 
 <script>
 export default {
-    props:{
-        redirectState:String
-    },
     data(){
         return {
             scopes:[
@@ -29,28 +26,39 @@ export default {
                 "https://www.googleapis.com/auth/userinfo.email"+"%20",
                 "https://www.googleapis.com/auth/userinfo.profile"
             ],
-            redirect_uri:"gipassl.algotech.app/api/user/google_user_login_callback",
+            // redirect_uri:"gipassl.algotech.app/api/user/google_user_login_callback",
+            callback_uri:"http://localhost:8000/api/user/google_user_login_callback",
+            redirect_uri:"https://localhost:8080/",
+            redirect_route:"test_page1",
             response_type:"code",
             client_id:"536277208137-okgj3vg6tskek5eg6r62jis5didrhfc3.apps.googleusercontent.com",
-            access_type:"offline"
+            access_type:"offline",
         }
     },
     computed:{
         googleLoginHyperReference(){
             let href=`https://accounts.google.com/o/oauth2/v2/auth?`
-            href+=`redirect_uri=${this.redirect_uri}&`
+            href+=`redirect_uri=${this.callback_uri}&`
             href+=`response_type=${this.response_type}&`
             href+=`client_id=${this.client_id}&`
             href+=`access_type=${this.access_type}&`
-            if (this.redirectState != undefined){
-                href+=`state=${this.redirectState}&`
-            }
+            // href+=`state=${this.redirect_uri},${this.callback_uri}&`
+            href+=`state=${JSON.stringify({
+                redirect_uri:this.redirect_uri,
+                redirect_route:this.redirect_route,
+                callback_uri:this.callback_uri
+                })}&`
+
             href+=`scope=`
-            for (const scope in this.scopes) href+=scope
+            this.scopes.forEach(value=>{
+                href+=value
+            })
+            // for (const scope in this.scopes) href+=scope
             return href
         }
     },
 }
+
 </script>
 
 <style>
@@ -67,3 +75,5 @@ export default {
 }
 
 </style>
+
+

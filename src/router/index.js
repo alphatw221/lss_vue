@@ -6,6 +6,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
     { path: '/', component: () => import('@/pages/AdminLoginPage.vue') },
+    { path: '/seller_login', component: () => import('@/pages/SellerLoginPage.vue') },
     { path: '/admin_console_page', 
       component: () => import('@/pages/AdminConsolePage.vue'),
       beforeEnter: (to,from) =>{

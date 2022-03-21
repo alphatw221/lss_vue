@@ -15,6 +15,8 @@
     </div>
 
     <BindFacebookPageWidgets/>
+
+    <BindYoutubeChannelWidgets/>
     </v-container>
   </v-app>
 </template>
@@ -26,6 +28,7 @@
 // import GoogleLoginButton from '@/components/button/GoogleLoginButton.vue'
 // import SearchBar from '@/components/bar/SearchBar.vue'
 import BindFacebookPageWidgets from '@/widgets/BindFacebookPageWidgets.vue'
+import BindYoutubeChannelWidgets from '@/widgets/BindYoutubeChannelWidgets.vue'
 
 export default {
   name: 'TestPage1',
@@ -44,7 +47,8 @@ export default {
     // // DynamicTable,
     // FacebookLoginButton,
     // SearchBar
-    BindFacebookPageWidgets
+    BindFacebookPageWidgets,
+    BindYoutubeChannelWidgets
   },
   props: {     //TestComponent properties here
     msg: String

@@ -5,6 +5,10 @@ export const admin_login = data => {
     return axiosInstance.post(`/token/`,data);
 };
 
+export const seller_login = data =>{
+    return axiosInstance.post(`/api/user/user_login/`,data);
+}
+
 export const retrieve_user = id => {
     console.log(id)
     return axiosInstanceWithBearer.get(`/user/${id}`);
