@@ -22,7 +22,13 @@
                             Login
                         </h3>
                         <div class="login-button-section">
-                            <FacebookLoginButton/>
+                            <div style="margin: 10px 0px">
+                                <FacebookLoginButton :busName="'sellerFacebookLogin'"/>
+                            </div>
+                            <div style="margin:auto;">
+                                <GoogleLoginButton/>
+                            </div>
+                            
                         </div>
                         
                         <h6 class="browser-reminder">
@@ -42,8 +48,12 @@
 <script>
 
 // import {admin_login} from '@/api/user'
-// import seller_login from '@api/user'
+import {seller_login} from '@/api/user'
+
 import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
+
+import GoogleLoginButton from '@/components/button/GoogleLoginButton.vue'
+
 export default {
     name:"SellerLoginPage",
     data() {
@@ -56,10 +66,34 @@ export default {
                     src: require("@/assets/login/new-lss-carousel-2.jpg"),
                 }
             ],
+            
         }
     },
     components:{
-        FacebookLoginButton
+        FacebookLoginButton,
+        GoogleLoginButton
+    },
+    mounted(){
+        this.eventBus.on('sellerFacebookLogin',payload=>{
+            seller_login(payload).then(response=>{
+
+                var set_cookie = new Promise((res)=>{
+                    this.$cookies.set("access_token", response.data.access)
+                    res()
+                })
+                set_cookie.then(()=>{
+                    this.$router.push('test_page1')
+                })
+                // this.$cookies.set("access_token", response.data.access)
+                // // this.$store.commit('set_access_token', response.data.access)
+                // this.$router.push('/test_page1');
+            }).catch(error=>{
+                alert(error)
+            })
+        })
+    },
+    unmounted(){
+        this.eventBus.off('sellerFacebookLogin')
     },
     methods:{
         // login(){

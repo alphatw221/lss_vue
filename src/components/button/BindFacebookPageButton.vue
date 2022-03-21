@@ -66,8 +66,6 @@ export default {
         //         // }
         //         window.FB.logout();
         //     },{scope: 'public_profile,email'});
-            
-
         // }
     }
 }

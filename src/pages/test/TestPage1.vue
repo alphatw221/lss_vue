@@ -7,32 +7,29 @@
     <h1>{{ msg }}</h1>
 
     <h1>Test Page 1</h1>
-
-    <DynamicFormDialog
-      :dialogName="'testDialog'"
-      :requestUrl="'/api/user/'"
-      :indexField="'id'"
-      :columns="columns"
-    />
-
     <button @click="test">Test</button>
 
-    <FacebookLoginButton :busName="'lssLogin'"/>
+    <!-- <FacebookLoginButton :busName="'lssLogin'"/>
 
-    <SearchBar :searchColumns="searchColumns"/>
-    <DynamicTable :tableName="'testTable'" :columns="tableColumns" :requestUrl="''"/>
-  </div>
+    <GoogleLoginButton/> -->
+    </div>
 
+    <BindFacebookPageWidgets/>
+
+    <BindYoutubeChannelWidgets/>
     </v-container>
   </v-app>
 </template>
 
 <script>
 
-import DynamicFormDialog from '@/components/dialog/DynamicFormDialog.vue'
-import DynamicTable from '@/components/table/DynamicTable.vue'
-import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
-import SearchBar from '@/components/bar/SearchBar.vue'
+// import DynamicTable from '@/components/table/DynamicTable.vue'
+// import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
+// import GoogleLoginButton from '@/components/button/GoogleLoginButton.vue'
+// import SearchBar from '@/components/bar/SearchBar.vue'
+import BindFacebookPageWidgets from '@/widgets/BindFacebookPageWidgets.vue'
+import BindYoutubeChannelWidgets from '@/widgets/BindYoutubeChannelWidgets.vue'
+
 export default {
   name: 'TestPage1',
   mounted(){
@@ -46,10 +43,12 @@ export default {
       this.eventBus.off("lssLogin");
   },
   components: {
-    DynamicFormDialog,
-    DynamicTable,
-    FacebookLoginButton,
-    SearchBar
+    // GoogleLoginButton,
+    // // DynamicTable,
+    // FacebookLoginButton,
+    // SearchBar
+    BindFacebookPageWidgets,
+    BindYoutubeChannelWidgets
   },
   props: {     //TestComponent properties here
     msg: String
