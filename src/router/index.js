@@ -5,9 +5,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // () =>import('@/libs/routerMiddleware/isAdminMiddleware')
 
 const routes = [
-    { path: '/', component: () => import('@/pages/AdminLoginPage.vue') },
-    { path: '/seller_login', component: () => import('@/pages/SellerLoginPage.vue') },
-    { path: '/admin_console_page', 
+    { path: '/admin_login', component: () => import('@/pages/AdminLoginPage.vue') },
+    { path: '/admin_console', 
       component: () => import('@/pages/AdminConsolePage.vue'),
       beforeEnter: (to,from) =>{
         to;
@@ -30,15 +29,39 @@ const routes = [
         
       ]
     },
-    { path: '/test_page1', component: () => import('@/pages/test/TestPage1.vue') },
-    // { path: '/test_page1', component: () => import('@/pages/SellerLoginPage.vue') },
-    { path: '/test_page2', component: () => import('@/pages/test/TestPage2.vue') },
-    { path: '/test_page3', component: () => import('@/pages/test/TestPage3.vue') },
+
+    { path: '/test1', component: () => import('@/pages/test/TestPage1.vue') },
+    { path: '/test2', component: () => import('@/pages/test/TestPage2.vue') },
+    { path: '/test3', component: () => import('@/pages/test/TestPage3.vue') },
 
 
 
     //seller
-    { path: '/login', component: () => import('@/pages/SellerLoginPage.vue') },
+    { path: '/', component: () => import('@/pages/SellerLoginPage.vue') },
+    { path: '/seller_login', component: () => import('@/pages/SellerLoginPage.vue') },
+    { path: '/seller_console', 
+      component: () => import('@/pages/SellerConsolePage.vue'),
+      beforeEnter: (to,from) =>{
+        to;
+        from;
+        return true
+      },
+      children:[
+        {
+          path:'user',
+          component: () => import('@/pages/AdminApiUserPage.vue')
+        },
+        {
+          path:'user_subscription',
+          component: () => import('@/pages/AdminApiUserSubscription.vue')
+        },
+        {
+          path:'hello_world',
+          component: () => import('@/components/HelloWorld.vue')
+        }
+        
+      ]
+    },
 ]
 
 const router = createRouter({
