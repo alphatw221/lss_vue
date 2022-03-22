@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <AdminConsoleNavigationDrawers/>
+        <ConsoleNavigationDrawers/>
 
         <!-- <v-app-bar app>
         </v-app-bar> -->
@@ -23,17 +23,17 @@
 </template>
 
 <script>
-import AdminConsoleNavigationDrawers from '@/components/navigation/AdminConsoleNavigationDrawers.vue'
+import ConsoleNavigationDrawers from '@/components/navigation/ConsoleNavigationDrawers.vue'
 
 export default {
-    name:"AdminConsolePage",
+    name:"SellerConsolePage",
     data() {
         return {
         }
         
     },
     components: {
-        AdminConsoleNavigationDrawers,
+        ConsoleNavigationDrawers,
     },
     methods:{
        

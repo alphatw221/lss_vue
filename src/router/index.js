@@ -5,9 +5,9 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 // () =>import('@/libs/routerMiddleware/isAdminMiddleware')
 
 const routes = [
-    { path: '/admin_login', component: () => import('@/pages/AdminLoginPage.vue') },
+    { path: '/admin_login', component: () => import('@/pages/admin/AdminLoginPage.vue') },
     { path: '/admin_console', 
-      component: () => import('@/pages/AdminConsolePage.vue'),
+      component: () => import('@/pages/admin/AdminConsolePage.vue'),
       beforeEnter: (to,from) =>{
         to;
         from;
@@ -37,10 +37,10 @@ const routes = [
 
 
     //seller
-    { path: '/', component: () => import('@/pages/SellerLoginPage.vue') },
-    { path: '/seller_login', component: () => import('@/pages/SellerLoginPage.vue') },
+    { path: '/', component: () => import('@/pages/seller/SellerLoginPage.vue') },
+    { path: '/seller_login', component: () => import('@/pages/seller/SellerLoginPage.vue') },
     { path: '/seller_console', 
-      component: () => import('@/pages/SellerConsolePage.vue'),
+      component: () => import('@/pages/seller/SellerConsolePage.vue'),
       beforeEnter: (to,from) =>{
         to;
         from;
@@ -48,18 +48,9 @@ const routes = [
       },
       children:[
         {
-          path:'user',
-          component: () => import('@/pages/AdminApiUserPage.vue')
+          path:'setting',
+          component: () => import('@/pages/seller/SellerSettingPage.vue')
         },
-        {
-          path:'user_subscription',
-          component: () => import('@/pages/AdminApiUserSubscription.vue')
-        },
-        {
-          path:'hello_world',
-          component: () => import('@/components/HelloWorld.vue')
-        }
-        
       ]
     },
 ]

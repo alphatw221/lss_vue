@@ -82,7 +82,7 @@ export default {
                     res()
                 })
                 set_cookie.then(()=>{
-                    this.$router.push('test_page1')
+                    this.$router.push('seller_console')
                 })
                 // this.$cookies.set("access_token", response.data.access)
                 // // this.$store.commit('set_access_token', response.data.access)

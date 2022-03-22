@@ -16,7 +16,7 @@
             <v-devider ></v-devider>
             <v-devider></v-devider>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/admin_console/hello_world'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <v-icon>mdi-widgets</v-icon>
                 </v-list-item-icon>
@@ -25,7 +25,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/user'">
+            <v-list-item :to="'/admin_console/user'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <v-icon>mdi-account-box</v-icon>
                 </v-list-item-icon>
@@ -34,7 +34,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/user_subscription'">
+            <v-list-item :to="'/admin_console/user_subscription'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="subscription_icon" class="menu_icon"/>
                 </v-list-item-icon>
@@ -43,7 +43,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/admin_console/hello_world'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="order_icon" class="menu_icon"/>
                 </v-list-item-icon>
@@ -52,7 +52,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/admin_console/hello_world'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="plan_icon" class="menu_icon"/>
                 </v-list-item-icon>
@@ -61,7 +61,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/admin_console/hello_world'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="plan_icon" class="menu_icon"/>
                 </v-list-item-icon>
@@ -70,7 +70,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/admin_console/hello_world'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="seller_icon" class="menu_icon"/>
                 </v-list-item-icon>
@@ -79,7 +79,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/admin_console/hello_world'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="buyer_icon" class="menu_icon"/>
                 </v-list-item-icon>
@@ -88,7 +88,7 @@
                 </v-list-item-content>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console_page/hello_world'">
+            <v-list-item :to="'/seller_console/setting'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <img :src="setting_icon" class="menu_icon"/>
                 </v-list-item-icon>
