@@ -1,14 +1,15 @@
 <template>
-  <div class="test_page2">
-    <h1>{{ msg }}</h1>
-
-    <h1>Test Page 3</h1>
-  </div>
+    <v-app>
+        <BuyerNavigationDrawers/>
+    </v-app>
 </template>
 
 <script>
+import BuyerNavigationDrawers from '@/components/navigation/BuyerNavigationDrawers.vue'
+
 export default {
   name: 'TestPage3',
+  component: { BuyerNavigationDrawers },
   props: {     //TestComponent properties here
     msg: String
   },

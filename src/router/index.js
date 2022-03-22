@@ -48,9 +48,13 @@ const routes = [
       },
       children:[
         {
-          path:'setting',
+          path: 'setting',
           component: () => import('@/pages/seller/SellerSettingPage.vue')
         },
+        {
+          path: 'dashboard',
+          component: () => import('@/pages/seller/Dashboard.vue')
+        }
       ]
     },
 ]

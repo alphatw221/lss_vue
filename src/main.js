@@ -7,6 +7,7 @@ const app = createApp(AppAdminConsole)
 // vuetify
 import 'vuetify/styles' // Global CSS has to be imported
 import '@mdi/font/css/materialdesignicons.css'
+import '@/assets/css/lss.css'
 
 import { loadFonts } from './plugins/webfontloader'
 loadFonts()

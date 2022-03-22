@@ -1,0 +1,151 @@
+/*----------------------------------------
+  lss-new CSS
+------------------------------------------*/
+/* for all */
+.action_icon {
+    color:#b6b6b6;
+    margin-bottom: -3px;
+  }
+  .lss_avatar {
+    width: 25px; 
+    margin-bottom: -4rem;
+    margin-top:-3px;
+  }
+  @media only screen and (max-width: 987px) {
+    .rwd_icon {
+    padding-left: 15px;
+    padding-right: 10px;
+    }
+  }
+  /* main內容設定 */
+  #main {
+    min-height: calc(100% - 100px);
+  
+  }
+  #main .section-data-tables .dataTables_wrapper table.dataTable thead th {
+    color:#202020;
+    font-weight: bold;
+  }
+  .console_table_content .datatable-search .search_btn {
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+  }
+  .console_table_content .datatable-search .export_btn {
+    margin-left:7px;
+    margin-top: 1rem;
+  }
+  .console_table_content .datatable-search .create_btn {
+    margin-left:7px;
+    margin-top: 1rem;
+    border:2px solid #03045e;
+    box-shadow: none;
+    font-weight: bolder;
+  }
+  .console_table_content .country_select .dataTables_length {
+    margin-top: 1vh;
+    margin-left: -0.3rem;
+  }
+  /* 表格文字格式 */
+  .console_table_content .section-data-tables .page-length-option thead, tr th {
+    font-size: 12px;
+  }
+  .console_table_content .section-data-tables .page-length-option tbody, tr td {
+    font-size: 14px;
+  }
+  /* select下拉選單兩邊與字間距 */
+  .select-wrapper {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+  .lss_tab {
+    border-bottom: 1px solid #7986cb;
+    background-color:#f9f9f9;
+  }
+  .lss_tab li a {
+    text-transform: none;
+    color: #03045e!important;
+    border: 1px solid #3949ab;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .lss_tab .tab a:hover, .tabs .tab a.active {
+    text-transform: none;
+    background-color: #03045e;
+    font-weight: bolder;
+    color: #ffffff!important;
+  }
+  .lss_tab .tab a:hover, .tabs .tab a:focus.active {
+    text-transform: none;
+    background-color: #03045e;
+    color: #ffffff!important;
+  }
+  .lss_tab .tabs .indicator {
+    background-color: #7986cb;
+  }
+  
+  /* sidebar navbar CSS */
+  .lss_light_blue {
+    background: #c7ccdb;
+  }
+  .lss_grey {
+    background-color: #363946;
+  }
+  
+  /* nav */
+  .lss_nav nav.navbar-main.navbar-color {
+    padding-right: 0px;
+  }
+  .lss_nav {
+    height: 47px;
+    line-height: 40px;
+  }
+  
+  /* sidebar */
+  .sidebar_content a.navigation-header-text.sidebar_text {
+    font-size: 14px; 
+    color:#e0e0e0;
+    text-transform: none;
+  }
+  img.sidebar_img {
+    height: 14pt;
+    margin-bottom: 3px;
+  }
+  
+  /* dashboard */
+  h4.header.statistic_card_header {
+    text-transform: none;
+  }
+  .card_size {
+    padding: 3% 5% 1%;
+  }
+  
+  /* sellers */
+  #sellers_content .sellers_country_select {
+    margin-left: -1rem;
+    margin-top: 4px;
+  }
+  
+  /* order history */
+  #order_history_content .buyer_name {
+    margin-left: 3rem;
+  }
+  #main #order_history_content .section-data-tables .dataTables_wrapper table.dataTable tbody tr td:before, #main .section-data-tables .dataTables_wrapper table.dataTable tbody tr th:before {
+    top: 30px!important;
+  }
+  .show_text label {
+    display: inline-flex;
+    width: auto;
+    line-height: 4.5;
+    margin-top: 1.8%;
+  }
+  
+  /* settings */
+  #buyer_announcement .collection .collection-item.avatar {
+    min-height: 74px!important;
+    padding-left: 60px;
+    min-height: 0;
+  }
+  #buyer_announcement .collection .collection-item {
+    margin-left: -1.5rem;
+  }

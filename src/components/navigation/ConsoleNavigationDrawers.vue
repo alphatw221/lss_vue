@@ -16,7 +16,7 @@
             <v-devider ></v-devider>
             <v-devider></v-devider>
 
-            <v-list-item :to="'/admin_console/hello_world'">
+            <v-list-item :to="'/seller_console/dashboard'">
                 <v-list-item-icon style="margin: 0 1.2rem 0 0.7rem;">
                     <v-icon>mdi-widgets</v-icon>
                 </v-list-item-icon>
