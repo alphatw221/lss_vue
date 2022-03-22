@@ -35,11 +35,34 @@ const routes = [
     { path: '/test3', component: () => import('@/pages/test/TestPage3.vue') },
 
 
-
+    //buyer
+    { path: '/buyer_login', component: () => import('@/pages/buyer/BuyerLoginPage.vue') },
+    { path: '/buyer', 
+      component: () => import('@/pages/buyer/BuyerLayoutPage.vue'),
+      beforeEnter: (to,from) =>{
+        to;
+        from;
+        return true
+      },
+      children:[
+        {
+          path:'pre_order/:id',
+          component: () => import('@/pages/buyer/BuyerCartDetailPage.vue')
+        },
+        {
+          path:'order/:id',
+          component: () => import('@/pages/buyer/BuyerOrderDetailPage.vue')
+        },
+        {
+          path:'order_history',
+          component: () => import('@/pages/buyer/BuyerOrderHistoryPage.vue')
+        },
+      ]
+    },
     //seller
     { path: '/', component: () => import('@/pages/seller/SellerLoginPage.vue') },
     { path: '/seller_login', component: () => import('@/pages/seller/SellerLoginPage.vue') },
-    { path: '/seller_console', 
+    { path: '/seller', 
       component: () => import('@/pages/seller/SellerConsolePage.vue'),
       beforeEnter: (to,from) =>{
         to;

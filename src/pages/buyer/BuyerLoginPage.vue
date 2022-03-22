@@ -48,14 +48,14 @@
 <script>
 
 // import {admin_login} from '@/api/user'
-import {seller_login} from '@/api/user'
+import { buyer_login} from '@/api/user'
 
 import FacebookLoginButton from '@/components/button/FacebookLoginButton.vue'
 
 import GoogleLoginButton from '@/components/button/GoogleLoginButton.vue'
 
 export default {
-    name:"SellerLoginPage",
+    name:"BuyerLoginPage",
     data() {
         return {
             carousel_items: [
@@ -75,14 +75,14 @@ export default {
     },
     mounted(){
         this.eventBus.on('buyerFacebookLogin',payload=>{
-            seller_login(payload).then(response=>{
+            buyer_login(payload).then(response=>{
 
                 var set_cookie = new Promise((res)=>{
                     this.$cookies.set("access_token", response.data.access)
                     res()
                 })
                 set_cookie.then(()=>{
-                    this.$router.push('cart')
+                    this.$router.push('buyer')
                 })
                 // this.$cookies.set("access_token", response.data.access)
                 // // this.$store.commit('set_access_token', response.data.access)

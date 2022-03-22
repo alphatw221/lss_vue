@@ -88,7 +88,11 @@ export default {
             .then(
                 response=>{
                     console.log(response)
-                    this.totalPage = parseInt(response.data.count / this.pageSize) == 0 ? 1 : parseInt(response.data.count / this.pageSize)
+                    if(response.data.count!=undefined){
+                        const totalPage = parseInt(response.data.count / this.pageSize)
+                        this.totalPage = totalPage == 0 ? 1 : totalPage
+                    }
+                    
                     this.listItems = response.data.results
                 }
             ).catch(
