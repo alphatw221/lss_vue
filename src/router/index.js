@@ -26,14 +26,12 @@ const routes = [
           path:'hello_world',
           component: () => import('@/components/HelloWorld.vue')
         }
-        
       ]
     },
 
     { path: '/test1', component: () => import('@/pages/test/TestPage1.vue') },
     { path: '/test2', component: () => import('@/pages/test/TestPage2.vue') },
     { path: '/test3', component: () => import('@/pages/test/TestPage3.vue') },
-
 
     //buyer
     { path: '/buyer_login', component: () => import('@/pages/buyer/BuyerLoginPage.vue') },
@@ -76,7 +74,7 @@ const routes = [
         },
         {
           path: 'dashboard',
-          component: () => import('@/pages/seller/Dashboard.vue')
+          component: () => import('@/pages/seller/SellerDashBoardPage.vue')
         }
       ]
     },

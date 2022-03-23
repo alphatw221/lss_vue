@@ -125,10 +125,10 @@ export default {
         login(){
             admin_login({"username":this.loginForm.username,"password":this.loginForm.password}).then(
                 response=>{
-                console.log(response)
-                this.$cookies.set("access_token", response.data.access)
-                this.$store.commit('set_access_token', response.data.access)
-                this.$router.push('/admin_console_page');
+                    console.log(response)
+                    this.$cookies.set("access_token", response.data.access)
+                    this.$store.commit('set_access_token', response.data.access)
+                    this.$router.push('/admin_console');
                 }
             ).catch(
                 err=>{

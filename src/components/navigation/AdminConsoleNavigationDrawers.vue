@@ -74,9 +74,9 @@ export default {
   },
   data: () => ({
     items: [
-          { title: 'User', icon: 'mdi-account-box' ,route: '/admin_console_page/user'},
-          { title: 'User Subscription', icon: 'mdi-view-dashboard' ,route: '/admin_console_page/user_subscription'},
-          { title: 'Dashboard', icon: 'mdi-gavel' ,route: '/admin_console_page/hello_world'},
+          { title: 'User', icon: 'mdi-account-box' ,route: '/admin_console/user'},
+          { title: 'User Subscription', icon: 'mdi-view-dashboard' ,route: '/admin_console/user_subscription'},
+          { title: 'Dashboard', icon: 'mdi-gavel' ,route: '/admin_console/hello_world'},
         ],
     lss_icon:require("@/assets/lss-logo/logo_wh.png")
   }),
