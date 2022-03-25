@@ -1,46 +1,42 @@
 <template>
 <v-container>
-  <v-card>
-    <v-container>
-      <v-row>
-        <v-col cols=2>
+    <v-card>
+        <v-container style="height: 5rem;">
+            <v-row >
+                <v-col cols=2>
+                    <v-select
+                        v-model="pageSize"
+                        :items="[10, 20, 50]"
+                        @keyup="search"
+                        dense
+                        filled
+                        label="Page Size"
+                    ></v-select>
+                </v-col>
+                <v-spacer />
 
-          <v-select
-            v-model="pageSize"
-            :items="[10, 20, 50]"
-            @keyup="search"
-            dense
-            filled
-            label="Page Size"
-          ></v-select>
+                <v-col cols=3>
+                    <v-select
+                        v-model="searchColumn"
+                        :items="searchColumns"
+                        label="Search Column"
+                        >
+                    </v-select>
+                </v-col>
+            
+                <v-spacer/>
 
-        </v-col>
-        <v-spacer />
-        <v-col cols=3>
-          <v-select
-            v-model="searchColumn"
-            :items="searchColumns"
-            label="Search Column"
-            >
-          </v-select>
-        </v-col>
-      
-      <v-spacer/>
-
-      <v-col cols=6>
-        <v-text-field
-          label="Search"
-          placeholder=""
-          @keyup="search"
-          v-model="keyword"
-        ></v-text-field>
-      </v-col>
-
-      </v-row>
-      
-    </v-container>
-    
-  </v-card>
+                <v-col cols=6>
+                    <v-text-field
+                    label="Search"
+                    placeholder=""
+                    @keyup="search"
+                    v-model="keyword"
+                    ></v-text-field>
+                </v-col>
+            </v-row>
+        </v-container>
+    </v-card>
 </v-container>
   
 </template>

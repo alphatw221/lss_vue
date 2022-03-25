@@ -75,6 +75,10 @@ const routes = [
         {
           path: 'dashboard',
           component: () => import('@/pages/seller/SellerDashBoardPage.vue')
+        },
+        {
+          path: 'subscription',
+          component: () => import('@/pages/seller/SellerUserSubscription.vue')
         }
       ]
     },

@@ -23,7 +23,7 @@
                 <v-list-item-title>User</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console/user_subscription'">
+            <v-list-item :to="'/seller/subscription'">
                 <img :src="subscription_icon" class="menu_icon"/>
                 <v-list-item-title>User Subscription</v-list-item-title>
             </v-list-item>
