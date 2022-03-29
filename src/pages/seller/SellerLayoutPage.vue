@@ -26,7 +26,7 @@
 import ConsoleNavigationDrawers from '@/components/navigation/ConsoleNavigationDrawers.vue'
 
 export default {
-    name:"SellerConsolePage",
+    name:"SellerLayoutPage",
     data() {
         return {
         }

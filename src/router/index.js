@@ -61,7 +61,7 @@ const routes = [
     { path: '/', component: () => import('@/pages/seller/SellerLoginPage.vue') },
     { path: '/seller_login', component: () => import('@/pages/seller/SellerLoginPage.vue') },
     { path: '/seller', 
-      component: () => import('@/pages/seller/SellerConsolePage.vue'),
+      component: () => import('@/pages/seller/SellerLayoutPage.vue'),
       beforeEnter: (to,from) =>{
         to;
         from;
@@ -78,7 +78,7 @@ const routes = [
         },
         {
           path: 'subscription',
-          component: () => import('@/pages/seller/SellerUserSubscription.vue')
+          component: () => import('@/pages/seller/SellerUserSubscriptionPage.vue')
         }
       ]
     },
