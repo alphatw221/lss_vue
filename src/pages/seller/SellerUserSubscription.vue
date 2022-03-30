@@ -7,15 +7,20 @@
         <v-main>
             <SearchBar 
                 :searchColumns="searchColumns"
-            ></SearchBar>
+            />
             <v-divider></v-divider>
-            <v-table height="500">
+            <SubTable
+                :tableName="'User Subscription Table'"
+                :requestUrl="'/api/user-subscription/dealer_search_list'"
+                :columns="tableColumns"
+            />
+            <!-- <v-table height="500">
                 <thead>
-                <tr>
-                    <th v-for="column in tableColumns" :key="column.key" style="font-size:1rem;">
-                        {{column.name}}
-                    </th>
-                </tr>
+                    <tr>
+                        <th v-for="column in tableColumns" :key="column.key" style="font-size:1rem;">
+                            {{column.name}}
+                        </th>
+                    </tr>
                 </thead>
                 <tbody v-for="item in listItems" :key="item.id">
                     <tr @click="showItem=item.id">
@@ -24,6 +29,7 @@
                         </td>
                         
                     </tr>
+<<<<<<< HEAD
                     <tr v-if="item.id == showItem">
                         <v-row v-for="column in expandtableColumns" :key="column.key">
                             <v-col>
@@ -35,19 +41,26 @@
                             <v-divider></v-divider>
                         </v-row>
                     </tr>
+=======
+                    <tr v-if="item.id == showItem">aa</tr>
+                    <tr v-if="item.id == showItem">aa</tr>
+                    <tr v-if="item.id == showItem">aa</tr>
+>>>>>>> 13d4ebace5a720c61183338deb4ff9336813025c
                 </tbody>
-            </v-table>
+            </v-table> -->
         </v-main>
     </v-app>
 </template>
 <script>
 import PageBar from '@/components/bar/PageBar.vue';
-import SearchBar from "@/components/bar/SearchBar.vue";
+import SearchBar from '@/components/bar/SearchBar.vue';
+import SubTable from '@/components/table/SubscriptionTable.vue';
 
 export default {
     components: {  
         PageBar,
-        SearchBar
+        SearchBar,
+        SubTable
    },
     data() {
         return {
@@ -56,10 +69,10 @@ export default {
             tableColumns:[
                 {key:'id',  name:'ID'},
                 {key:'country', name:'Country'},
-                {key:'plan', name:'Plan'},
+                {key:'type', name:'Plan'},
                 {key:'trial_period', name:'Trial Period'},
-                {key:'contract_period', name:'Contract Period'},
-                {key:'company', name:'Company Brand'},
+                {key:'expired_at', name:'Contract Period'},
+                {key:'name', name:'Company Brand'},
                 {key:'std', name:'Sales Till Dates(STD)'},
                 {key:'person', name:'Person in Charge'},
                 {key:'phone', name:'Phone'},
@@ -74,7 +87,6 @@ export default {
                 {'id': '4', 'country': 'US', 'plan': 'Trial', 'trial_period': '3 Month', 'contract_period': '20220211', 'company': 'OSC', 'std': '12050', 'person': 'Pooop', 'phone': '0000000','recentCampaigns':'7'},
                 {'id': '5', 'country': 'US', 'plan': 'Trial', 'trial_period': '4 Month', 'contract_period': '20220202', 'company': 'OSC', 'std': '12500', 'person': 'Pooop', 'phone': '0000000','recentCampaigns':'5'}
             ],
-            info_show: false,
             showItem: null
         }
     },   

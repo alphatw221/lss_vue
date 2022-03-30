@@ -37,8 +37,6 @@
                     
                 </v-card>
             
-           
-            
         </v-container>
     </v-app>
 </template>
@@ -82,7 +80,7 @@ export default {
                     res()
                 })
                 set_cookie.then(()=>{
-                    this.$router.push('seller_console')
+                    this.$router.push('seller')
                 })
                 // this.$cookies.set("access_token", response.data.access)
                 // // this.$store.commit('set_access_token', response.data.access)

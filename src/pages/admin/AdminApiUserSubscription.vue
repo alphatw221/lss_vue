@@ -26,7 +26,7 @@
 
     <DynamicTable
       :tableName="'User Subscription Table'"
-      :requestUrl="'/api/user-subscription/search_list'"
+      :requestUrl="'/api/user-subscription/dealer_search_list'"
       :columns="tableColumns"
     ></DynamicTable>
 
