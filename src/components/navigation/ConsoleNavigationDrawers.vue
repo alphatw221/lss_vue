@@ -13,7 +13,7 @@
                 </v-row>
             </v-list-item>
 
-            <v-list-item :to="'/seller/dashboard'">
+            <v-list-item :to="'/seller/dashboard'" @click="setAppBarPageName('Dashboard')">
                 <v-icon style="margin: 0 1.2rem 0 0.7rem;">mdi-widgets</v-icon>
                 <v-list-item-title>Dashboard</v-list-item-title>
             </v-list-item>
@@ -23,12 +23,12 @@
                 <v-list-item-title>User</v-list-item-title>
             </v-list-item> -->
 
-            <v-list-item :to="'/seller/subscription'">
+            <v-list-item :to="'/seller/subscription'" @click="setAppBarPageName('User Subscription')">
                 <img :src="subscription_icon" class="menu_icon"/>
                 <v-list-item-title>User Subscription</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/seller/comment_summarize'">
+            <v-list-item :to="'/seller/comment_summarize'" @click="setAppBarPageName('Comment Summarize')">
                 <img :src="plan_icon" class="menu_icon"/>
                 <v-list-item-title>Comment Summarize</v-list-item-title>
             </v-list-item>
@@ -58,7 +58,7 @@
                 <v-list-item-title>Buyer</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/seller/setting'">
+            <v-list-item :to="'/seller/setting'" @click="setAppBarPageName('Setting')">
                 <img :src="setting_icon" class="menu_icon"/>
                 <v-list-item-title>Setting</v-list-item-title>
             </v-list-item>
@@ -97,7 +97,9 @@ export default {
 
   },
   methods:{
-
+      setAppBarPageName(name){
+          this.eventBus.emit('setAppBarPageName',name)
+      }
   }
 }
 </script>
