@@ -2,37 +2,63 @@
     <v-table height="500">
         <thead>
             <tr>
-                <th v-for="column in columns" v-bind:key="column.key" style="font-size:1.2rem;">
+                <th v-for="column in tableColumns" v-bind:key="column.key" style="font-size:1.2rem;">
                     {{column.name}}
                 </th>
             </tr>
         </thead>
         <tbody v-for="item in listItems" :key="item.id">
             <tr @click="showItem=item.id">
-                <td v-for="column in columns" :key="column.key" style="font-size:1.1rem;">
+                <td v-for="column in tableColumns" :key="column.key" style="font-size:1.1rem;">
                     {{ column.is_field ?? item[column.key] }}
                 </td>
             </tr>
-            <tr v-if="item.id == showItem">
-                <td>Email:</td>
-                <td>{{ item.users[0].email }}</td>
-            </tr>
-            <tr v-if="item.id == showItem">
-                <td>Page:</td>
-                <td v-for="fb in item.facebook_pages" :key="fb"> 
-                    <tr> {{ fb.name }} </tr>
-                    <tr>
-                        <v-avatar
-                            class="ma-3"
-                            size="35"
-                        >
-                            <v-img :src="fb.image"></v-img>
-                        </v-avatar>                        
+
+            <v-container v-if="item.id == showItem">
+
+                <tr  v-for="row,index in collapseRows" :key="index">
+                        <div v-if="row.type=='array'">
+                            <td>{{row.name}}</td>
+                            <td v-for="object,object_index in item[row.key]" :key="object_index">
+                                <div v-for="column,column_index in row.columns" :key="column_index">
+                                    <v-avatar v-if="column.type=='avatar'">
+
+                                        <div v-if="column.key2!=undefined">
+                                            <img :src="object[column.key][column.key2]" alt="">
+                                        </div>
+
+                                        <div v-else>
+                                            <img :src="object[column.key]" alt="">
+                                        </div>
+
+                                    </v-avatar>
+
+                                    <image v-if="column.type=='image'" :src="field[column.key]"/>
+
+                                    <div v-if="column.type=='text'">
+                                        <span>{{column.name}}</span>
+                                        <span>{{object[column.key]}}</span>
+                                    </div>
+
+                                </div>
+                                
+                            </td>
+                        </div>
+
+
+                        <td v-if="row.type=='text'">
+                            <span>{{row.name}}</span>
+                            <span>{{item[row.key]}}</span>
+                        </td>
+
+                        <td v-if="row.type=='image'">
+                            <image :src="item[row.key]"/>
+                        </td>
+
                     </tr>
-                </td>
-                
-            </tr>
-            <tr v-if="item.id == showItem">aa</tr>
+
+            </v-container>
+            
             
         </tbody>
     </v-table>
@@ -51,17 +77,23 @@ export default {
     props:{
         tableName: String,
         requestUrl: String,
-        columns: Array,
+        tableColumns: Array,
+        collapseRows: Array
+
     },
     data(){
         return{
+            jp :require('jsonpath'),
             currentPage: 1,
             totalPage: 1,
             pageSize: 10,
             searchColumn: undefined,
             keyword: undefined,
             listItems: [],
-            showItem: undefined
+            showItem: undefined,
+
+            
+
         }
     },
     watch:{

@@ -58,10 +58,10 @@ export default {
         return {
             carousel_items: [
                 {
-                    src: require("@/assets/login/new-lss-carousel-1.jpg"),
+                    src: require("@/assets/login/new-lss-carousel-1.jpeg"),
                 },
                 {
-                    src: require("@/assets/login/new-lss-carousel-2.jpg"),
+                    src: require("@/assets/login/new-lss-carousel-2.jpeg"),
                 }
             ],
             

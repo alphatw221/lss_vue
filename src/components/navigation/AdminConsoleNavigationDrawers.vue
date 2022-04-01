@@ -28,8 +28,8 @@
           </v-row>
         </v-list-item>
 
-        <v-devider ></v-devider>
-        <v-devider></v-devider>
+        <!-- <v-devider ></v-devider>
+        <v-devider></v-devider> -->
 
         <v-list-item
           v-for="item in items"
@@ -40,13 +40,13 @@
           <!-- <v-icon>{{ item.icon }}</v-icon>
           <v-list-item-title>{{ item.title }}</v-list-item-title> -->
 
-          <v-list-item-icon>
+          <!-- <v-list-item-icon> -->
             <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
+          <!-- </v-list-item-icon> -->
 
-          <v-list-item-content>
+          <!-- <v-list-item-content> -->
             <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
+          <!-- </v-list-item-content> -->
         </v-list-item>
       </v-list>
 
