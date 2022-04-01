@@ -50,7 +50,7 @@ export default {
     },
     mounted(){
         this.eventBus.on("handleItemClick", item => {
-            this.$router.push(`comment_summarize/${item.id}`)
+            this.$router.push(`comment_summarize/campaign/${item.id}`)
         });
         
     },

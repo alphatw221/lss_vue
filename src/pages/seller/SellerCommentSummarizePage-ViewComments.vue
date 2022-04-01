@@ -27,41 +27,49 @@
             flat
             tile>
 
-            <CommentCategoryCountCard v-for="category,index in comment_categories" :key="index" 
-            :campaignId="campaign_id"
-            :title="category.name" 
-            :number="category.comment_count"
-            :total="category.total_comment_count"
-            />
+            <v-card v-for="comment,index in comments" :key="index">
+                <v-card-title>
+                    Customer:{{comment.customer_name}}
+                </v-card-title>
+
+                <v-card-subtitle>
+                    Platform:{{comment.platform}}
+                </v-card-subtitle>
+                <v-card-text>
+                    {{comment.message}}
+                </v-card-text>
+                
+            </v-card>            
 
         </v-card>
         
-
+        
     </v-container>
 </template>
 
 <script>
-import {campaign_comment_summarize} from '@/api/campaign_comment'
-import CommentCategoryCountCard from '@/components/card/CommentCategoryCountCard.vue'
+import {campaign_comment_category_list} from '@/api/campaign_comment'
+// import CommentCategoryCountCard from '@/components/card/CommentCategoryCountCard.vue'
 
 export default {
     name:"SellerCommentSummarizePage",
     components: { 
-        CommentCategoryCountCard
+        // CommentCategoryCountCard
     },
 
     data() {
         return {
             campaign_id:this.$route.params.campaign_id,
-            comment_categories:[],
+            category_name:this.$route.params.category_name,
+            comments:[],
             progressing:true
         }
     },
     mounted(){
-        campaign_comment_summarize(this.campaign_id).then(
+        campaign_comment_category_list(this.campaign_id,this.category_name).then(
             res=>{
                 console.log(res.data)
-                this.comment_categories = res.data
+                this.comments = res.data
                 this.progressing = false
             }
         ).catch(
