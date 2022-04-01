@@ -79,6 +79,10 @@ const routes = [
         {
           path: 'subscription',
           component: () => import('@/pages/seller/SellerUserSubscriptionPage.vue')
+        },
+        {
+          path: 'comment_summarize',
+          component: () => import('@/pages/seller/SellerCommentSummarizePage-ListCampaign.vue')
         }
       ]
     },

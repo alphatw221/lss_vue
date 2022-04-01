@@ -18,37 +18,42 @@
                 <v-list-item-title>Dashboard</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console/user'">
+            <!-- <v-list-item :to="'/seller/user'">
                 <v-icon style="margin: 0 1.2rem 0 0.7rem;">mdi-account-box</v-icon>
                 <v-list-item-title>User</v-list-item-title>
-            </v-list-item>
+            </v-list-item> -->
 
             <v-list-item :to="'/seller/subscription'">
                 <img :src="subscription_icon" class="menu_icon"/>
                 <v-list-item-title>User Subscription</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console/hello_world'">
+            <v-list-item :to="'/seller/comment_summarize'">
+                <img :src="plan_icon" class="menu_icon"/>
+                <v-list-item-title>Comment Summarize</v-list-item-title>
+            </v-list-item>
+
+            <!-- <v-list-item >
                 <img :src="order_icon" class="menu_icon"/>
                 <v-list-item-title>Transactions</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console/hello_world'">
+            <v-list-item >
                 <img :src="plan_icon" class="menu_icon"/>
                 <v-list-item-title>Plans</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console/hello_world'">
+            <v-list-item >
                 <img :src="plan_icon" class="menu_icon"/>
                 <v-list-item-title>Licenses</v-list-item-title>
             </v-list-item>
 
-            <v-list-item :to="'/admin_console/hello_world'">
+            <v-list-item >
                 <img :src="seller_icon" class="menu_icon"/>
                 <v-list-item-title>Seller</v-list-item-title>
-            </v-list-item>
+            </v-list-item> -->
 
-            <v-list-item :to="'/admin_console/hello_world'">
+            <v-list-item >
                 <img :src="buyer_icon" class="menu_icon"/>
                 <v-list-item-title>Buyer</v-list-item-title>
             </v-list-item>
@@ -84,7 +89,7 @@ export default {
     order_icon: require("@/assets/lss-icon/shopping_cart_plus_bk.png"),
     plan_icon: require("@/assets/lss-icon/live.png"),
     seller_icon: require("@/assets/lss-icon/regional.png"),
-    buyer_icon: require("@/assets/lss-icon/buyer_wh.jpeg"),
+    buyer_icon: require("@/assets/lss-icon/regional.png"),
     setting_icon: require("@/assets/lss-icon/settings.png"),
 
   }),
