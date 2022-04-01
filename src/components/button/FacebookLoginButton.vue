@@ -4,17 +4,18 @@
         Login with Facebook
     </button> -->
 
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div> -->
     <div >
         <div class="fb-login-button" 
-        data-width="" 
-        data-size="large" 
-        data-button-type="login_with" 
-        data-layout="default" 
-        data-auto-logout-link="false" 
-        data-use-continue-as="false" 
-        scope="public_profile,email,pages_read_engagement,pages_show_list,pages_read_user_content,pages_manage_engagement,pages_messaging,instagram_basic,instagram_manage_messages" 
-        onlogin="checkLoginState()"></div>
+            data-width="" 
+            data-size="large" 
+            data-button-type="login_with" 
+            data-layout="default" 
+            data-auto-logout-link="false" 
+            data-use-continue-as="false" 
+            scope="public_profile,email,pages_read_engagement,pages_show_list,pages_read_user_content,pages_manage_engagement,pages_messaging,instagram_basic,instagram_manage_messages" 
+            onlogin="checkLoginState()">
+        </div>
     </div>
     
 </template>
@@ -38,8 +39,8 @@ export default {
             console.log('checkloginstate')
             window.FB.getLoginStatus(response=>{
                 if (response.status === 'connected') {
-                    const payload = {'accessToken':response.authResponse.accessToken}
-                    this.eventBus.emit(this.busName,payload)
+                    const payload = {'accessToken': response.authResponse.accessToken}
+                    this.eventBus.emit(this.busName, payload)
                 } 
             });
         }

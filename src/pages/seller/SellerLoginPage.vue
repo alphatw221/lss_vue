@@ -72,7 +72,7 @@ export default {
         GoogleLoginButton
     },
     mounted(){
-        this.eventBus.on('sellerFacebookLogin',payload=>{
+        this.eventBus.on('sellerFacebookLogin', payload=>{
             seller_login(payload).then(response=>{
 
                 var set_cookie = new Promise((res)=>{
