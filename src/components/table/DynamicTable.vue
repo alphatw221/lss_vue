@@ -1,24 +1,36 @@
 <template>
 <v-container>
 <v-card >
+    
+    <div  v-if="progressing" class="text-center my-15">
+        <v-progress-circular
+            :size="50"
+            color="primary"
+            indeterminate
+        ></v-progress-circular>
+    </div>
 
-    <v-table height="500">
+    <v-table height="500" v-if="!progressing">
         <thead>
         <tr>
             <th v-for="column in columns" v-bind:key="column.key">
                 {{column.name}}
             </th>
-            <th>
+            <th v-if="editable">
                 Edit
             </th>
         </tr>
         </thead>
+
+        
         <tbody>
-            <tr v-for="item in listItems" v-bind:key="item.id">
+            
+            
+            <tr v-for="item in listItems" v-bind:key="item.id" @click="handleItemClick(item.id)">
                 <td v-for="column in columns" v-bind:key="column.key" >
                     {{column.is_field??item[column.key]}}
                 </td>
-                <td>
+                <td v-if="editable">
                     <v-btn 
                         elevation="3"
                         height="1.5rem"
@@ -30,7 +42,7 @@
     </v-table>
 
 
-    <div class="text-center">
+    <div class="text-center"  v-if="!progressing">
         <v-pagination
             v-model="currentPage"
             v-bind:length="totalPage"
@@ -49,6 +61,7 @@ export default {
         tableName: String,
         requestUrl: String,
         columns: Array,
+        editable:Boolean
     },
     data(){
         return{
@@ -57,7 +70,8 @@ export default {
             pageSize: 10,
             searchColumn: undefined,
             keyword: undefined,
-            listItems: []
+            listItems: [],
+            progressing:true
         }
     },
     watch:{
@@ -83,6 +97,7 @@ export default {
     },
     methods:{
         search(){
+            this.progressing=true;
             axiosInstanceWithBearer
             .get(this.requestUrl + `?page_size=${this.pageSize}&page=${this.currentPage}&search_column=${this.searchColumn}&keyword=${this.keyword}`)
             .then(
@@ -94,6 +109,7 @@ export default {
                     }
                     
                     this.listItems = response.data.results
+                    this.progressing=false
                 }
             ).catch(
                 error=>{
@@ -103,6 +119,9 @@ export default {
         },
         showEditFormDialog(item_id) {
             this.eventBus.emit('showEditFormDialog',{id:item_id})
+        },
+        handleItemClick(item_id){
+            this.eventBus.emit('handleItemClick',{id:item_id})
         }
     }
 }
@@ -113,4 +132,8 @@ th, td {
    font-size: 2rem; 
 }
 
+.progress-circle {
+    margin: auto;
+    padding: auto;
+}
 </style>

@@ -1,13 +1,27 @@
 <template>
-    <v-card>
+    <v-card
+    class="mx-2 my-2"
+    max-width="344"
+    min-width="200"
+    variant="outlined"
+    >
         <v-card-title>
             {{title}}
         </v-card-title>
 
-
-        <v-card-content>
+        <v-card-subtitle>
             {{number}}/{{total}}
-        </v-card-content>
+        </v-card-subtitle>
+        
+        <v-card-actions>
+            <v-btn
+                variant="outlined"
+                rounded
+                text
+            >
+                View
+            </v-btn>
+        </v-card-actions>
 
     </v-card>
 </template>
