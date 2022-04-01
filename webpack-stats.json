@@ -1,0 +1,258 @@
+{
+  "status": "done",
+  "assets": {
+    "main-9f1606dce7ec234dd571.js": {
+      "name": "main-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/main-9f1606dce7ec234dd571.js"
+    },
+    "53f53f50a1b2033979f5.eot": {
+      "name": "53f53f50a1b2033979f5.eot",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/53f53f50a1b2033979f5.eot"
+    },
+    "53f53f50a1b2033979f5.eot?v=5.9.55": {
+      "name": "53f53f50a1b2033979f5.eot?v=5.9.55",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/53f53f50a1b2033979f5.eot"
+    },
+    "0e4e0b3da55fa7faa77b.ttf?v=5.9.55": {
+      "name": "0e4e0b3da55fa7faa77b.ttf?v=5.9.55",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/0e4e0b3da55fa7faa77b.ttf"
+    },
+    "e9db4005489e24809b62.woff2?v=5.9.55": {
+      "name": "e9db4005489e24809b62.woff2?v=5.9.55",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/e9db4005489e24809b62.woff2"
+    },
+    "d8e8e0f7931afa097409.woff?v=5.9.55": {
+      "name": "d8e8e0f7931afa097409.woff?v=5.9.55",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/d8e8e0f7931afa097409.woff"
+    },
+    "webfontloader-9f1606dce7ec234dd571.js": {
+      "name": "webfontloader-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/webfontloader-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_admin_AdminLoginPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_admin_AdminLoginPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminLoginPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "4a834479a6f4ae219d21.jpg": {
+      "name": "4a834479a6f4ae219d21.jpg",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/4a834479a6f4ae219d21.jpg"
+    },
+    "src_pages_admin_AdminConsolePage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_admin_AdminConsolePage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminConsolePage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_admin_AdminApiUserPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_admin_AdminApiUserPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_admin_AdminApiUserSubscription_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_admin_AdminApiUserSubscription_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserSubscription_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_components_HelloWorld_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_components_HelloWorld_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_HelloWorld_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_test_TestPage1_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_test_TestPage1_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage1_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_test_TestPage2_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_test_TestPage2_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage2_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_test_TestPage3_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_test_TestPage3_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage3_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_buyer_BuyerLoginPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_buyer_BuyerLoginPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLoginPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_buyer_BuyerLayoutPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_buyer_BuyerLayoutPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLayoutPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_buyer_BuyerCartDetailPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_buyer_BuyerCartDetailPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerCartDetailPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_buyer_BuyerOrderDetailPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_buyer_BuyerOrderDetailPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderDetailPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_buyer_BuyerOrderHistoryPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_buyer_BuyerOrderHistoryPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderHistoryPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_seller_SellerLoginPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_seller_SellerLoginPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLoginPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_seller_SellerLayoutPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_seller_SellerLayoutPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLayoutPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_seller_SellerSettingPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_seller_SellerSettingPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerSettingPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_seller_SellerDashBoardPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_seller_SellerDashBoardPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerDashBoardPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_pages_seller_SellerUserSubscriptionPage_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_pages_seller_SellerUserSubscriptionPage_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerUserSubscriptionPage_vue-9f1606dce7ec234dd571.js"
+    },
+    "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-9f1606dce7ec234dd571.js": {
+      "name": "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-9f1606dce7ec234dd571.js"
+    },
+    "vendors-node_modules_jsonpath_jsonpath_js-9f1606dce7ec234dd571.js": {
+      "name": "vendors-node_modules_jsonpath_jsonpath_js-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_jsonpath_jsonpath_js-9f1606dce7ec234dd571.js"
+    },
+    "src_components_table_DynamicTable_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_components_table_DynamicTable_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_table_DynamicTable_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_assets_lss-logo_logo_wh_png-9f1606dce7ec234dd571.js": {
+      "name": "src_assets_lss-logo_logo_wh_png-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_lss-logo_logo_wh_png-9f1606dce7ec234dd571.js"
+    },
+    "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-9f1606dce7ec234dd571.js": {
+      "name": "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-9f1606dce7ec234dd571.js"
+    },
+    "src_components_navigation_ConsoleNavigationDrawers_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_components_navigation_ConsoleNavigationDrawers_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_navigation_ConsoleNavigationDrawers_vue-9f1606dce7ec234dd571.js"
+    },
+    "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-9f1606dce7ec234dd571.js": {
+      "name": "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-9f1606dce7ec234dd571.js"
+    },
+    "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-9f1606dce7ec234dd571.js": {
+      "name": "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-9f1606dce7ec234dd571.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-9f1606dce7ec234dd571.js"
+    },
+    "main-9f1606dce7ec234dd571.js.map": {
+      "name": "main-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/main-9f1606dce7ec234dd571.js.map"
+    },
+    "webfontloader-9f1606dce7ec234dd571.js.map": {
+      "name": "webfontloader-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/webfontloader-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_admin_AdminLoginPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_admin_AdminLoginPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminLoginPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_admin_AdminConsolePage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_admin_AdminConsolePage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminConsolePage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_admin_AdminApiUserPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_admin_AdminApiUserPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_admin_AdminApiUserSubscription_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_admin_AdminApiUserSubscription_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserSubscription_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_components_HelloWorld_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_components_HelloWorld_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_HelloWorld_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_test_TestPage1_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_test_TestPage1_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage1_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_test_TestPage2_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_test_TestPage2_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage2_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_test_TestPage3_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_test_TestPage3_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage3_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_buyer_BuyerLoginPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_buyer_BuyerLoginPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLoginPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_buyer_BuyerLayoutPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_buyer_BuyerLayoutPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLayoutPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_buyer_BuyerCartDetailPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_buyer_BuyerCartDetailPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerCartDetailPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_buyer_BuyerOrderDetailPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_buyer_BuyerOrderDetailPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderDetailPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_buyer_BuyerOrderHistoryPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_buyer_BuyerOrderHistoryPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderHistoryPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_seller_SellerLoginPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_seller_SellerLoginPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLoginPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_seller_SellerLayoutPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_seller_SellerLayoutPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLayoutPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_seller_SellerSettingPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_seller_SellerSettingPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerSettingPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_seller_SellerDashBoardPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_seller_SellerDashBoardPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerDashBoardPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_pages_seller_SellerUserSubscriptionPage_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_pages_seller_SellerUserSubscriptionPage_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerUserSubscriptionPage_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-9f1606dce7ec234dd571.js.map": {
+      "name": "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-9f1606dce7ec234dd571.js.map"
+    },
+    "vendors-node_modules_jsonpath_jsonpath_js-9f1606dce7ec234dd571.js.map": {
+      "name": "vendors-node_modules_jsonpath_jsonpath_js-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_jsonpath_jsonpath_js-9f1606dce7ec234dd571.js.map"
+    },
+    "src_components_table_DynamicTable_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_components_table_DynamicTable_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_table_DynamicTable_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_assets_lss-logo_logo_wh_png-9f1606dce7ec234dd571.js.map": {
+      "name": "src_assets_lss-logo_logo_wh_png-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_lss-logo_logo_wh_png-9f1606dce7ec234dd571.js.map"
+    },
+    "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-9f1606dce7ec234dd571.js.map": {
+      "name": "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-9f1606dce7ec234dd571.js.map"
+    },
+    "src_components_navigation_ConsoleNavigationDrawers_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_components_navigation_ConsoleNavigationDrawers_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_navigation_ConsoleNavigationDrawers_vue-9f1606dce7ec234dd571.js.map"
+    },
+    "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-9f1606dce7ec234dd571.js.map": {
+      "name": "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-9f1606dce7ec234dd571.js.map"
+    },
+    "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-9f1606dce7ec234dd571.js.map": {
+      "name": "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-9f1606dce7ec234dd571.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-9f1606dce7ec234dd571.js.map"
+    }
+  },
+  "chunks": {
+    "main": [
+      "main-9f1606dce7ec234dd571.js"
+    ]
+  }
+}

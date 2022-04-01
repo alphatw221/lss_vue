@@ -3,24 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "webpack --config ./webpack.config.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@vue/compiler-sfc": "^3.2.31",
     "axios": "^0.26.1",
+<<<<<<< HEAD
+=======
+    "chart.js": "^3.7.1",
+    "clean-webpack-plugin": "^4.0.0",
+>>>>>>> 2142780e6ee25e5fe0beb6689efc93d0f61a3b9f
     "core-js": "^3.8.3",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
     "jsonpath": "^1.1.1",
     "material-design-icons-iconfont": "^6.4.2",
     "mitt": "^3.0.0",
     "roboto-fontface": "*",
+    "style-loader": "^3.3.1",
     "vue": "^3.2.13",
     "vue-axios": "^3.4.1",
 <<<<<<< HEAD
 =======
     "vue-chartjs": "^3.5.1",
+<<<<<<< HEAD
 >>>>>>> 25019680b586148d2710dd73e42cb76b013bb424
+=======
+    "vue-loader": "^17.0.0",
+>>>>>>> 2142780e6ee25e5fe0beb6689efc93d0f61a3b9f
     "vue-router": "^4.0.14",
     "vue3-cookies": "^1.0.6",
     "vuetify": "npm:@vuetify/nightly@next",
@@ -35,10 +49,16 @@
     "@vue/cli-service": "^5.0.4",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^6.2.1",
     "sass": "^1.38.0",
     "sass-loader": "^10.0.0",
+    "url-loader": "^4.1.1",
     "vue-cli-plugin-vuetify": "~2.4.7",
-    "vuetify-loader": "^2.0.0-alpha.0"
+    "vuetify-loader": "^2.0.0-alpha.0",
+    "webpack-bundle-tracker": "^1.4.0",
+    "webpack-cli": "^4.9.2"
   },
   "eslintConfig": {
     "root": true,
@@ -60,4 +80,5 @@
     "not dead",
     "not ie 11"
   ]
+  
 }

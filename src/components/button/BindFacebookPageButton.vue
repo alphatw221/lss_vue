@@ -26,7 +26,8 @@ export default {
     },
     setup(){
         window.FB.init({
-            appId: process.env.VUE_APP_FB_APP_ID,   
+            // appId: process.env.VUE_APP_FB_APP_ID,  
+            appId: "967598017063136", 
             cookie: true,
             xfbml: true,
             version: "v13.0",
