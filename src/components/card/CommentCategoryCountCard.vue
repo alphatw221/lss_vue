@@ -18,8 +18,9 @@
                 variant="outlined"
                 rounded
                 text
+                :to="`/seller/comment_summarize/campaign/${campaignId}/category/${title}`"
             >
-                View
+                View 123
             </v-btn>
         </v-card-actions>
 
@@ -28,6 +29,7 @@
 <script>
 export default {
     props: {
+        campaignId:String,
         title:String,
         number:Number,
         total:Number
@@ -37,6 +39,8 @@ export default {
             
         }
     },
+    methods:{
+    }
 }
 </script>
 <style scoped>

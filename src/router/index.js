@@ -85,9 +85,13 @@ const routes = [
           component: () => import('@/pages/seller/SellerCommentSummarizePage-ListCampaign.vue')
         },
         {
-          path: 'comment_summarize/:id',
+          path: 'comment_summarize/campaign/:campaign_id',
           component: () => import('@/pages/seller/SellerCommentSummarizePage-CommentSummarize.vue')
-        }
+        },
+        {
+          path: 'comment_summarize/campaign/:campaign_id/category/:category_name',
+          component: () => import('@/pages/seller/SellerCommentSummarizePage-ViewComments.vue')
+        },
       ]
     },
 ]
