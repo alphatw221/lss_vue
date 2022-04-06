@@ -49,4 +49,9 @@ import VueAxios from 'vue-axios'
 app.use(VueAxios, axios)
 
 
+//i18n
+import i18n from './i18n'
+app.use(i18n)
+
+
 app.mount('#app')

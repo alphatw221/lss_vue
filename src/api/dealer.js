@@ -1,4 +1,4 @@
-import { axiosInstance, axiosInstanceWithBearer } from "@/libs/axiosClient";
+import { /*axiosInstance,*/ axiosInstanceWithBearer } from "@/libs/axiosClient";
 
 export const dealer_dashboard = () => {
     return axiosInstanceWithBearer.get('/api/dashboard/dealer_cards/');

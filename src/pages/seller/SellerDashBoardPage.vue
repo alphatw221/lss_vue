@@ -44,8 +44,8 @@
 <script>
 import AmountCard from '@/components/card/AmountCard.vue';
 import PageBar from '@/components/bar/PageBar.vue';
-import LineChart from '@/components/chart/LineChart.vue'
-import { axiosInstanceWithBearer } from "@/libs/axiosClient";
+import LineChart from '@/components/chart/LineChart.vue';
+//import { axiosInstanceWithBearer } from "@/libs/axiosClient";
 import { dealer_dashboard, dealer_campaign } from '@/api/dealer';
 
 export default {
