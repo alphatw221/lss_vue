@@ -6,7 +6,7 @@ export const admin_login = data => {
 };
 
 export const seller_login = data =>{
-    return axiosInstance.post(`/api/user/user_login/`,data);
+    return axiosInstance.post(`/api/user/user_login/`, data);
 }
 
 export const buyer_login = data =>{
