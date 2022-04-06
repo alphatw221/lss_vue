@@ -2,8 +2,9 @@
     <v-app>
         <ConsoleNavigationDrawers/>
 
-        <!-- <v-app-bar app>
-        </v-app-bar> -->
+        <PageBar
+            :barName="pageName"
+        />
 
         <!-- Sizes your content based upon application components -->
         <v-main>
@@ -24,16 +25,27 @@
 
 <script>
 import ConsoleNavigationDrawers from '@/components/navigation/ConsoleNavigationDrawers.vue'
-
+import PageBar from '@/components/bar/PageBar.vue'
 export default {
     name:"SellerLayoutPage",
+    mounted(){
+        this.eventBus.on('setAppBarPageName', name=>{
+            this.pageName=name
+        })
+    },
+    unmounted(){
+        this.eventBus.off('setAppBarPageName')
+    },
+
     data() {
         return {
+            pageName:""
         }
         
     },
     components: {
         ConsoleNavigationDrawers,
+        PageBar
     },
     methods:{
        

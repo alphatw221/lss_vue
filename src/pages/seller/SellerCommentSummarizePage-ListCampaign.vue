@@ -1,6 +1,7 @@
 <template>
   <v-container>
       
+    
 
       <SearchBar 
         :searchColumns="searchColumns"
@@ -10,6 +11,7 @@
         :tableName="'Campaign Table'"
         :requestUrl="'/api/campaign/search_list'"
         :columns="tableColumns"
+        :editable="false"
     ></DynamicTable>
 
 
@@ -27,7 +29,7 @@ export default {
     name:"SellerCommentSummarizePage",
     components: { 
         DynamicTable,
-        SearchBar
+        SearchBar,
     },
 
     data() {
@@ -47,6 +49,13 @@ export default {
         }
     },
     mounted(){
+        this.eventBus.on("handleItemClick", item => {
+            this.$router.push(`comment_summarize/campaign/${item.id}`)
+        });
+        
+    },
+    unmounted(){
+        this.eventBus.off("handleItemClick");
     },
     methods:{
     }
