@@ -7,13 +7,16 @@
             Sign Up
         </h1>
 
-        <v-timeline direction="horizontal" truncate-line="start" line-thickness=1 line-color="#777771">
+        <div style="padding:50px">
+             <v-timeline direction="horizontal" truncate-line="start" line-thickness=1 line-color="#777771">
 
-            <v-timeline-item :hide-dot="true"></v-timeline-item>
-            <v-timeline-item v-bind:dot-color="colors.basicInfoColor" :fill-dot="true" ><span>Basic Info</span> </v-timeline-item>
-            <v-timeline-item v-bind:dot-color="colors.paymentColor" :fill-dot="true" > <span>Payment</span>  </v-timeline-item>
-            <v-timeline-item v-bind:dot-color="colors.confirmationColor" :fill-dot="true" > <span>Confirmation</span> </v-timeline-item>
-        </v-timeline>
+                <v-timeline-item :hide-dot="true"></v-timeline-item>
+                <v-timeline-item v-bind:dot-color="colors.basicInfoColor" :fill-dot="true" ><span>Basic Info</span> </v-timeline-item>
+                <v-timeline-item v-bind:dot-color="colors.paymentColor" :fill-dot="true" > <span>Payment</span>  </v-timeline-item>
+                <v-timeline-item v-bind:dot-color="colors.confirmationColor" :fill-dot="true" > <span>Confirmation</span> </v-timeline-item>
+            </v-timeline>
+        </div>
+       
 
         <v-tabs
           v-model="tab"
@@ -30,14 +33,14 @@
                 <v-row>
                     <v-col>
                         <label for="firstName">First Name</label><span class="star">*</span>
-                        <v-text-field v-model="formData.firstName" :rules="generalRules" required
+                        <v-text-field v-model="basicInfo.firstName" :rules="generalRules" required
                             
                         ></v-text-field>
                     </v-col>
 
                     <v-col>
                         <label for="">Last Name</label><span class="star">*</span>
-                        <v-text-field v-model="formData.lastName" :rules="generalRules" required
+                        <v-text-field v-model="basicInfo.lastName" :rules="generalRules" required
                             
                         ></v-text-field>
                     </v-col>
@@ -46,7 +49,7 @@
                 <v-row>
                     <v-col>
                         <label for="">Contact Number</label><span class="star">*</span>
-                        <v-text-field  v-model="formData.contactNumber" :rules="generalRules" required
+                        <v-text-field  v-model="basicInfo.contactNumber" :rules="generalRules" required
                             
                         ></v-text-field>
                     </v-col>
@@ -57,7 +60,7 @@
                     <v-col>
                         <label for="email">Email</label><span class="star">*</span>
                         <v-text-field
-                            v-model="formData.email"
+                            v-model="basicInfo.email"
                             :rules="emailRules"
                             required
                         ></v-text-field>
@@ -73,7 +76,7 @@
                         <v-text-field
                             :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
                             @click:append="showPassword = !showPassword"
-                            v-model="formData.password"
+                            v-model="basicInfo.password"
                             :rules="passwordRules"
                             :type="showPassword ? 'text' : 'password'"
                             required
@@ -103,7 +106,7 @@
                     <v-col>
                         <label for="">Country/Region</label><span class="star">*</span>
                         <v-select
-                        v-model="formData.country"
+                        v-model="basicInfo.country"
                         :items="countries"
                         :rules="[v => !!v || 'Item is required']"
                         required>
@@ -116,7 +119,7 @@
                     <v-col>
                         <label for="">Plan</label><span class="star">*</span>
                         <v-select
-                            v-model="formData.plan"
+                            v-model="basicInfo.plan"
                             :items="plans"
                             :rules="[v => !!v || 'Item is required']"
                             :item-text="'text'"
@@ -128,11 +131,11 @@
                 </v-row>
 
 
-                <v-row v-if="formData.plan=='Standard(USD 30.00/Month)' || formData.plan=='Premium(USD 60.00/Month)'">
+                <v-row v-if="basicInfo.plan=='Standard(USD 30.00/Month)' || basicInfo.plan=='Premium(USD 60.00/Month)' || basicInfo.plan=='Lite'">
                     <v-col>
                         <label for="">Subscription Period</label><span class="star">*</span>
                         <v-select
-                            v-model="formData.period"
+                            v-model="basicInfo.period"
                             :items="periods"
                             :rules="[v => !!v || 'Item is required']"
                             required>
@@ -140,7 +143,7 @@
                     </v-col>
                 </v-row>
 
-                <v-row v-if="formData.plan=='Standard(USD 30.00/Month)' || formData.plan=='Premium(USD 60.00/Month)'">
+                <v-row v-if="basicInfo.plan=='Standard(USD 30.00/Month)' || basicInfo.plan=='Premium(USD 60.00/Month)'">
                     <v-col>
                         <label for="">Do you have a LSS promo code?</label>
                         <v-checkbox
@@ -151,11 +154,11 @@
                     </v-col>
                 </v-row>
 
-                <v-row v-if="(formData.plan=='Standard(USD 30.00/Month)' || formData.plan=='Premium(USD 60.00/Month)') && havePromoCode" >
+                <v-row v-if="(basicInfo.plan=='Standard(USD 30.00/Month)' || basicInfo.plan=='Premium(USD 60.00/Month)') && havePromoCode" >
                     <v-col>
                         <label for="">Early Bird Promo Code</label>
                         <v-text-field
-                            v-model="formData.promoCode"
+                            v-model="basicInfo.promoCode"
                         ></v-text-field>
                     </v-col>
                 </v-row>
@@ -166,7 +169,7 @@
                         style="float:right"
                         flat
                         color="error"
-                        @click="toStep2"
+                        @click="submitBasicInfo"
                             >
                             Next
                         </v-btn>
@@ -183,66 +186,47 @@
             
             <v-window-item value="payment">
                 
+                <v-row>
+                    <v-col>
+                        <label for="plan">Plan</label>
+                        <v-text-field v-model="paymentInfo.userPlan" readonly
+                        ></v-text-field>
+                    </v-col>
+
+                </v-row>
+
+                 <v-row>
+                    <v-col>
+                        <label for="total">Total</label>
+                        <v-text-field v-model="paymentAmountField" readonly
+                        ></v-text-field>
+                    </v-col>
+
+                </v-row>
+
 
                 <form id="payment-form">
-                <div id="payment-element">
-                    <!-- Elements will create form elements here -->
-                </div>
-                <!-- <button id="submit">Submit</button> -->
-                <!-- <v-btn
-                id="submit"
-                style="float:right"
-                flat
-                color="error">
-                    Submit
-                </v-btn> -->
-                <button id="submit">Submit</button>
-                <div id="error-message">
-                    <!-- Display error message to your customers here -->
-                </div>
+                    <div id="payment-element">
+                        <!-- Elements will create form elements here -->
+                    </div>
+                    <div id="message">
+                        <!-- Display error message to your customers here -->
+                    </div>
+
+                    <div id="error-message">
+                        <!-- Display error message to your customers here -->
+                    </div>
+                    <button id="submit" style="display:hidden"></button>       
                 </form>
 
+                <v-row></v-row>
 
-                <!-- <v-form v-model="formValid" ref="form2" lazy-validation>
-                <v-row>
-                    <v-col>
-                        <label for="firstName">First Name</label><span class="star">*</span>
-                        <v-text-field v-model="formData.firstName" :rules="generalRules" required
-                            
-                        ></v-text-field>
-                    </v-col>
-
-                    <v-col>
-                        <label for="">Last Name</label><span class="star">*</span>
-                        <v-text-field v-model="formData.lastName" :rules="generalRules" required
-                            
-                        ></v-text-field>
-                    </v-col>
-                </v-row>
-
-                <v-row>
-                    <v-col>
-                        <label for="">Plan</label><span class="star">*</span>
-                        <v-select
-                            v-model="formData.plan"
-                            :items="plans"
-                            :rules="[v => !!v || 'Item is required']"
-                            :item-text="'text'"
-                            :item-value="'value'"
-                            return-object
-                            required>
-                        </v-select>
-                    </v-col>
-                </v-row>
-
-
-
-                <v-row>
+                <v-row >
 
                     <v-col>
                         <v-btn
                             style="float:left"
-                            @click="toStep1"
+                            @click="backToBasicInfo"
                             color="grey"
                             plain
                             >
@@ -255,18 +239,64 @@
                         style="float:right"
                         flat
                         color="error"
-                        @click="toStep2"
+                        @click="signUp"
                             >
                             Sign Up
                         </v-btn>
                     </v-col>
                 </v-row>
 
+            </v-window-item>
 
-            
-                </v-form> -->
+ <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
+       
+             <v-window-item value="confirmation">
+                <v-row> 
+                    <v-col>
+                        <label for="email">Email</label>
+                        <v-text-field v-model="confirmationInfo.email" readonly
+                        ></v-text-field>
+                    </v-col>
+                </v-row>
+
+                 <v-row>
+                    <v-col>
+                        <label for="plan">Plan</label>
+                        <v-text-field v-model="confirmationInfo.plan" readonly
+                        ></v-text-field>
+                    </v-col>
+
+                </v-row>
+
+                <v-row> 
+                    <v-col>
+                        <label for="period">Subscription Period</label>
+                        <v-text-field v-model="confirmationInfo.period" readonly
+                        ></v-text-field>
+                    </v-col>
+                </v-row>
+
+                 <v-row>
+                    <v-col>
+                        <label for="due">Due Date</label>
+                        <v-text-field v-model="confirmationInfo.due" readonly
+                        ></v-text-field>
+                    </v-col>
+
+                </v-row>
+
+                <v-row>
+                    <v-col>
+                        <label for="receipt_url">Receipt</label>
+                        <v-text-field v-model="confirmationInfo.receipt_url" readonly
+                        ></v-text-field>
+                    </v-col>
+
+                </v-row>
 
             </v-window-item>
+
+
         </v-window>
 
     </v-container>
@@ -275,9 +305,8 @@
 
 <script>
 
-// import CustomSelect from '@/components/select/CustomSelect.vue'
 import loadScript from '@/libs/loadScript.js'
-import {seller_register} from '@/api/user'
+import {seller_register, seller_register_free_trail, seller_validate_register} from '@/api/user'
 
 export default {
     components:{
@@ -285,7 +314,7 @@ export default {
     },
     mounted(){
         loadScript("https://js.stripe.com/v3/",()=>{
-            alert('script loaded')
+            console.log("stripe SDK loaded")
         })
     },
     data(){
@@ -295,10 +324,7 @@ export default {
             showPassword:false,
             showConfirmPassword:false,
             havePromoCode:false,
-            countries:['Australia','Cambodia','Canada','Hong Kong', 'Korea', 'Malaysia', 'Singapore', 'Taiwan', 'Thailand', 'United States', 'Vietnam'],
-            plans:['Free Trial', 'Lite', 'Standard(USD 30.00/Month)', 'Premium(USD 60.00/Month)'],
-            periods:['Monthly', 'Quarterly'],
-            formData:{
+            basicInfo:{
                 firstName:"",
                 lastName:"",
                 contactNumber:"",
@@ -307,25 +333,31 @@ export default {
                 country:"",
                 plan:"",
                 period:"",
-                promoCode:""
+                promoCode:"",
+                intentSecret:""
             },
+            paymentInfo:{
+                userPlan:"",
+                paymentAmount:999999999
+            },
+            confirmationInfo:{},
             confirmPassoword:"",
             generalRules: [
-                v => !!v || 'This field is required',
-                v => (v && v.length <= 50) || 'This field must be less than 50 characters',
+                // v => !!v || 'This field is required',
+                // v => (v && v.length <= 50) || 'This field must be less than 50 characters',
             ],
             emailRules: [
-                v => !!v || 'E-mail is required',
-                v => /.+@.+/.test(v) || 'E-mail must be valid',
+                // v => !!v || 'E-mail is required',
+                // v => /.+@.+/.test(v) || 'E-mail must be valid',
             ],
             passwordRules:[
-                v => !!v || 'Password is required',
-                v => (v && v.length >= 8) || 'This field must be more than 8 characters',
-                v => (v && v.length <= 50) || 'This field must be less than 50 characters',
+                // v => !!v || 'Password is required',
+                // v => (v && v.length >= 8) || 'This field must be more than 8 characters',
+                // v => (v && v.length <= 50) || 'This field must be less than 50 characters',
             ],
             passwordMatchRules:[
-                v => !!v || 'Confirm Password is required',
-                v => v==this.formData.password||`Password dosen't match`
+                // v => !!v || 'Confirm Password is required',
+                // v => v==this.basicInfo.password||`Password dosen't match`
             ],
             completeColor:"#ed2225",
             incompleteColor:"#777771",
@@ -333,36 +365,56 @@ export default {
                 basicInfoColor:"#ed2225",
                 paymentColor:"#777771",
                 confirmationColor:"#777771"
-            }
+            },
+            countries:['Australia','Cambodia','Canada','Hong Kong', 'Korea', 'Malaysia', 'Singapore', 'Taiwan', 'Thailand', 'United States', 'Vietnam'],
+            plans:['Free Trial', 'Lite', 'Standard(USD 30.00/Month)', 'Premium(USD 60.00/Month)'],
+            periods:['Monthly', 'Quarterly'],
+        }
+    },
+    computed:{
+        paymentAmountField(){
+            return `SGD ${this.paymentInfo.paymentAmount}`
         }
     },
     methods:{
-        toStep2(){
-            this.tab = "payment"
-            this.colors.paymentColor = this.completeColor
+        submitBasicInfo(){
+            this.$refs.form1.validate().then(
+                res=>{
+                    if(res.valid){
+                        if (this.basicInfo.plan=='Free Trial'){
+                            seller_register_free_trail(this.basicInfo).then(res=>{
 
-            seller_register(this.formData).then(res=>{
-                console.log(res)
-                this.renderStripeElement(res.data.client_secret)
-            }).catch(err =>{
-                alert(err)
-            })
-            // this.tab = "payment"
-            // this.colors.paymentColor = this.completeColor
-            // console.log('next')
-            // this.$refs.form.validate().then(
-            //     res=>{
-            //         if(res.valid){
-            //             console.log('valid')
-            //         }
-            //     }
-            // ).catch(
-            //     err=>{
-            //         alert(err)
-            //     }
-            // )
+                                this.tab = "confirmation"
+                                this.colors.confirmationColor = this.completeColor
+                                this.confirmationInfo = res.data
+                                console.log(res.data)
+
+                            }).catch(err=>{
+                                err;
+                            })
+                        }else{
+                            this.tab = "payment"
+                            this.colors.paymentColor = this.completeColor
+
+                            seller_validate_register(this.basicInfo).then(res=>{
+                                console.log(res)
+                                this.paymentInfo.paymentAmount = res.data.payment_amount
+                                this.paymentInfo.userPlan = res.data.user_plan
+                                this.basicInfo.intentSecret = res.data.client_secret
+                                this.renderStripeElement(res.data.client_secret)
+                            }).catch(err=>{
+                                err;
+                            })
+                        }
+                    }
+                }
+            ).catch(
+                err=>{
+                    alert(err)
+                }
+            )
         },
-        toStep1(){
+        backToBasicInfo(){
             this.tab = "basicInfo"
             this.colors.paymentColor = this.incompleteColor
         },
@@ -372,7 +424,7 @@ export default {
             const options = {
             clientSecret: intentSecret,
             // Fully customizable with appearance API.
-            appearance: {/*...*/},
+            appearance: {theme: 'stripe'},
             };
 
             // Set up Stripe.js and Elements to use in checkout form, passing the client secret obtained in step 2
@@ -382,19 +434,15 @@ export default {
             const paymentElement = elements.create('payment');
             paymentElement.mount('#payment-element');
 
-
             const form = document.getElementById('payment-form');
 
             form.addEventListener('submit', async (event) => {
-                console.log('submit')
                 event.preventDefault();
 
                 const {error} = await stripe.confirmPayment({
                     //`Elements` instance that was used to create the Payment Element
                     elements,
-                    // confirmParams: {
-                    // return_url: 'https://localhost:8080/#/registeration',
-                    // },
+                    redirect:'if_required'
                 });
 
                 if (error) {
@@ -404,13 +452,12 @@ export default {
                     const messageContainer = document.querySelector('#error-message');
                     messageContainer.textContent = error.message;
                 } else {
-                    console.log('testtest')
                     // Your customer will be redirected to your `return_url`. For some payment
                     // methods like iDEAL, your customer will be redirected to an intermediate
                     // site first to authorize the payment, then redirected to the `return_url`.
                     stripe.retrievePaymentIntent(intentSecret).then(({paymentIntent}) => {
                         const message = document.querySelector('#message')
-
+                        message.innerText = '';
                         // Inspect the PaymentIntent `status` to indicate the status of the payment
                         // to your customer.
                         //
@@ -420,6 +467,17 @@ export default {
                         // [0]: https://stripe.com/docs/payments/payment-methods#payment-notification
                         switch (paymentIntent.status) {
                             case 'succeeded':
+                            seller_register(this.basicInfo).then(res=>{
+
+                                this.tab = "confirmation"
+                                this.colors.confirmationColor = this.completeColor
+                                this.confirmationInfo = res.data
+                                console.log(res.data)
+
+
+                            }).catch(err=>{
+                                alert(err)
+                            })
                             message.innerText = 'Success! Payment received.';
                             break;
 
@@ -437,12 +495,12 @@ export default {
                             message.innerText = 'Something went wrong.';
                             break;
                         }
-                    });
-
+                    })
                 }
-            });
-
-
+            })
+        },
+        signUp(){
+            document.getElementById('submit').click()
         }
     }
     
@@ -468,6 +526,7 @@ label {
 button{
     background-color: #ed2225;
     color: #FFFFFF;
+    
 }
 .star{
     color: #E04562;

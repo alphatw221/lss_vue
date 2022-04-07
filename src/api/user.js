@@ -5,6 +5,14 @@ export const admin_login = data => {
     return axiosInstance.post(`/token/`,data);
 };
 
+export const seller_register_free_trail = data =>{
+    return axiosInstance.post(`/api/user/register_free_trial/`,data);
+}
+
+export const seller_validate_register = data =>{
+    return axiosInstance.post(`/api/user/validate_register/`,data);
+}
+
 export const seller_register = data =>{
     return axiosInstance.post(`/api/user/register/`,data);
 }
