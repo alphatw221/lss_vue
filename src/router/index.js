@@ -59,6 +59,7 @@ const routes = [
     },
     //seller
     { path: '/', component: () => import('@/pages/seller/SellerLoginPage.vue') },
+    { path: '/registeration', component: () => import('@/pages/seller/SellerRegistrationPage.vue') },
     { path: '/seller_login', component: () => import('@/pages/seller/SellerLoginPage.vue') },
     { path: '/seller', 
       component: () => import('@/pages/seller/SellerLayoutPage.vue'),
