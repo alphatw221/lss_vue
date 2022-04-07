@@ -23,4 +23,5 @@ pnpm-debug.log*
 *.sw?
 
 #webpack bundle target folder
+webpack-stats.json
 /static
