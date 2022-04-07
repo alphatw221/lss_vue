@@ -1,9 +1,9 @@
 {
   "status": "done",
   "assets": {
-    "main-6f77abe0d01525976e6d.js": {
-      "name": "main-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/main-6f77abe0d01525976e6d.js"
+    "main-f4f7d30363a3848a9e64.js": {
+      "name": "main-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/main-f4f7d30363a3848a9e64.js"
     },
     "53f53f50a1b2033979f5.eot": {
       "name": "53f53f50a1b2033979f5.eot",
@@ -25,242 +25,266 @@
       "name": "d8e8e0f7931afa097409.woff?v=5.9.55",
       "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/d8e8e0f7931afa097409.woff"
     },
-    "webfontloader-6f77abe0d01525976e6d.js": {
-      "name": "webfontloader-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/webfontloader-6f77abe0d01525976e6d.js"
+    "webfontloader-f4f7d30363a3848a9e64.js": {
+      "name": "webfontloader-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/webfontloader-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_admin_AdminLoginPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_admin_AdminLoginPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminLoginPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_admin_AdminLoginPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_admin_AdminLoginPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminLoginPage_vue-f4f7d30363a3848a9e64.js"
     },
     "4a834479a6f4ae219d21.jpg": {
       "name": "4a834479a6f4ae219d21.jpg",
       "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/4a834479a6f4ae219d21.jpg"
     },
-    "src_pages_admin_AdminConsolePage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_admin_AdminConsolePage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminConsolePage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_admin_AdminConsolePage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_admin_AdminConsolePage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminConsolePage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_admin_AdminApiUserPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_admin_AdminApiUserPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_admin_AdminApiUserPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_admin_AdminApiUserPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_admin_AdminApiUserSubscription_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_admin_AdminApiUserSubscription_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserSubscription_vue-6f77abe0d01525976e6d.js"
+    "src_pages_admin_AdminApiUserSubscription_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_admin_AdminApiUserSubscription_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserSubscription_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_components_HelloWorld_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_components_HelloWorld_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_HelloWorld_vue-6f77abe0d01525976e6d.js"
+    "src_components_HelloWorld_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_components_HelloWorld_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_HelloWorld_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_test_TestPage1_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_test_TestPage1_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage1_vue-6f77abe0d01525976e6d.js"
+    "src_pages_test_TestPage1_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_test_TestPage1_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage1_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_test_TestPage2_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_test_TestPage2_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage2_vue-6f77abe0d01525976e6d.js"
+    "src_pages_test_TestPage2_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_test_TestPage2_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage2_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_test_TestPage3_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_test_TestPage3_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage3_vue-6f77abe0d01525976e6d.js"
+    "src_pages_test_TestPage3_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_test_TestPage3_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage3_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_buyer_BuyerLoginPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_buyer_BuyerLoginPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLoginPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_buyer_BuyerLoginPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_buyer_BuyerLoginPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLoginPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_buyer_BuyerLayoutPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_buyer_BuyerLayoutPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLayoutPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_buyer_BuyerLayoutPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_buyer_BuyerLayoutPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLayoutPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_buyer_BuyerCartDetailPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_buyer_BuyerCartDetailPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerCartDetailPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_buyer_BuyerCartDetailPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_buyer_BuyerCartDetailPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerCartDetailPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_buyer_BuyerOrderDetailPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_buyer_BuyerOrderDetailPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderDetailPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_buyer_BuyerOrderDetailPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_buyer_BuyerOrderDetailPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderDetailPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_buyer_BuyerOrderHistoryPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_buyer_BuyerOrderHistoryPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderHistoryPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_buyer_BuyerOrderHistoryPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_buyer_BuyerOrderHistoryPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderHistoryPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_seller_SellerLoginPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_seller_SellerLoginPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLoginPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerLoginPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerLoginPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLoginPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_seller_SellerLayoutPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_seller_SellerLayoutPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLayoutPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerRegistrationPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerRegistrationPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerRegistrationPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_seller_SellerSettingPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_seller_SellerSettingPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerSettingPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerLayoutPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerLayoutPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLayoutPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_seller_SellerDashBoardPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_seller_SellerDashBoardPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerDashBoardPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerSettingPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerSettingPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerSettingPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_seller_SellerUserSubscriptionPage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_seller_SellerUserSubscriptionPage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerUserSubscriptionPage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerDashBoardPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerDashBoardPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerDashBoardPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_seller_SellerCommentSummarizePage_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_pages_seller_SellerCommentSummarizePage_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerUserSubscriptionPage_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerUserSubscriptionPage_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerUserSubscriptionPage_vue-f4f7d30363a3848a9e64.js"
     },
-    "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-6f77abe0d01525976e6d.js": {
-      "name": "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerCommentSummarizePage-ListCampaign_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerCommentSummarizePage-ListCampaign_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage-ListCampaign_vue-f4f7d30363a3848a9e64.js"
     },
-    "vendors-node_modules_jsonpath_jsonpath_js-6f77abe0d01525976e6d.js": {
-      "name": "vendors-node_modules_jsonpath_jsonpath_js-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_jsonpath_jsonpath_js-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerCommentSummarizePage-CommentSummarize_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerCommentSummarizePage-CommentSummarize_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage-CommentSummarize_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_components_table_DynamicTable_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_components_table_DynamicTable_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_table_DynamicTable_vue-6f77abe0d01525976e6d.js"
+    "src_pages_seller_SellerCommentSummarizePage-ViewComments_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_pages_seller_SellerCommentSummarizePage-ViewComments_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage-ViewComments_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_assets_lss-logo_logo_wh_png-6f77abe0d01525976e6d.js": {
-      "name": "src_assets_lss-logo_logo_wh_png-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_lss-logo_logo_wh_png-6f77abe0d01525976e6d.js"
+    "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-f4f7d30363a3848a9e64.js": {
+      "name": "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-f4f7d30363a3848a9e64.js"
     },
-    "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-6f77abe0d01525976e6d.js": {
-      "name": "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-6f77abe0d01525976e6d.js"
+    "vendors-node_modules_jsonpath_jsonpath_js-f4f7d30363a3848a9e64.js": {
+      "name": "vendors-node_modules_jsonpath_jsonpath_js-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_jsonpath_jsonpath_js-f4f7d30363a3848a9e64.js"
     },
-    "src_components_navigation_ConsoleNavigationDrawers_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_components_navigation_ConsoleNavigationDrawers_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_navigation_ConsoleNavigationDrawers_vue-6f77abe0d01525976e6d.js"
+    "src_components_table_DynamicTable_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_components_table_DynamicTable_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_table_DynamicTable_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-6f77abe0d01525976e6d.js": {
-      "name": "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-6f77abe0d01525976e6d.js"
+    "src_assets_lss-logo_logo_wh_png-f4f7d30363a3848a9e64.js": {
+      "name": "src_assets_lss-logo_logo_wh_png-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_lss-logo_logo_wh_png-f4f7d30363a3848a9e64.js"
     },
-    "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-6f77abe0d01525976e6d.js": {
-      "name": "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-6f77abe0d01525976e6d.js",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-6f77abe0d01525976e6d.js"
+    "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-f4f7d30363a3848a9e64.js": {
+      "name": "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-f4f7d30363a3848a9e64.js"
     },
-    "main-6f77abe0d01525976e6d.js.map": {
-      "name": "main-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/main-6f77abe0d01525976e6d.js.map"
+    "src_components_navigation_ConsoleNavigationDrawers_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_components_navigation_ConsoleNavigationDrawers_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_navigation_ConsoleNavigationDrawers_vue-f4f7d30363a3848a9e64.js"
     },
-    "webfontloader-6f77abe0d01525976e6d.js.map": {
-      "name": "webfontloader-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/webfontloader-6f77abe0d01525976e6d.js.map"
+    "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-f4f7d30363a3848a9e64.js": {
+      "name": "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_admin_AdminLoginPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_admin_AdminLoginPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminLoginPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-f4f7d30363a3848a9e64.js": {
+      "name": "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-f4f7d30363a3848a9e64.js",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-f4f7d30363a3848a9e64.js"
     },
-    "src_pages_admin_AdminConsolePage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_admin_AdminConsolePage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminConsolePage_vue-6f77abe0d01525976e6d.js.map"
+    "main-f4f7d30363a3848a9e64.js.map": {
+      "name": "main-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/main-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_admin_AdminApiUserPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_admin_AdminApiUserPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserPage_vue-6f77abe0d01525976e6d.js.map"
+    "webfontloader-f4f7d30363a3848a9e64.js.map": {
+      "name": "webfontloader-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/webfontloader-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_admin_AdminApiUserSubscription_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_admin_AdminApiUserSubscription_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserSubscription_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_admin_AdminLoginPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_admin_AdminLoginPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminLoginPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_components_HelloWorld_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_components_HelloWorld_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_HelloWorld_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_admin_AdminConsolePage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_admin_AdminConsolePage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminConsolePage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_test_TestPage1_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_test_TestPage1_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage1_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_admin_AdminApiUserPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_admin_AdminApiUserPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_test_TestPage2_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_test_TestPage2_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage2_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_admin_AdminApiUserSubscription_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_admin_AdminApiUserSubscription_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_admin_AdminApiUserSubscription_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_test_TestPage3_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_test_TestPage3_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage3_vue-6f77abe0d01525976e6d.js.map"
+    "src_components_HelloWorld_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_components_HelloWorld_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_HelloWorld_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_buyer_BuyerLoginPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_buyer_BuyerLoginPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLoginPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_test_TestPage1_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_test_TestPage1_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage1_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_buyer_BuyerLayoutPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_buyer_BuyerLayoutPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLayoutPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_test_TestPage2_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_test_TestPage2_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage2_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_buyer_BuyerCartDetailPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_buyer_BuyerCartDetailPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerCartDetailPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_test_TestPage3_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_test_TestPage3_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_test_TestPage3_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_buyer_BuyerOrderDetailPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_buyer_BuyerOrderDetailPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderDetailPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_buyer_BuyerLoginPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_buyer_BuyerLoginPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLoginPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_buyer_BuyerOrderHistoryPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_buyer_BuyerOrderHistoryPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderHistoryPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_buyer_BuyerLayoutPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_buyer_BuyerLayoutPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerLayoutPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_seller_SellerLoginPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_seller_SellerLoginPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLoginPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_buyer_BuyerCartDetailPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_buyer_BuyerCartDetailPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerCartDetailPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_seller_SellerLayoutPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_seller_SellerLayoutPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLayoutPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_buyer_BuyerOrderDetailPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_buyer_BuyerOrderDetailPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderDetailPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_seller_SellerSettingPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_seller_SellerSettingPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerSettingPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_buyer_BuyerOrderHistoryPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_buyer_BuyerOrderHistoryPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_buyer_BuyerOrderHistoryPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_seller_SellerDashBoardPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_seller_SellerDashBoardPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerDashBoardPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerLoginPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerLoginPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLoginPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_seller_SellerUserSubscriptionPage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_seller_SellerUserSubscriptionPage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerUserSubscriptionPage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerRegistrationPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerRegistrationPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerRegistrationPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_pages_seller_SellerCommentSummarizePage_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_pages_seller_SellerCommentSummarizePage_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerLayoutPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerLayoutPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerLayoutPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-6f77abe0d01525976e6d.js.map": {
-      "name": "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerSettingPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerSettingPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerSettingPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "vendors-node_modules_jsonpath_jsonpath_js-6f77abe0d01525976e6d.js.map": {
-      "name": "vendors-node_modules_jsonpath_jsonpath_js-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_jsonpath_jsonpath_js-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerDashBoardPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerDashBoardPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerDashBoardPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_components_table_DynamicTable_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_components_table_DynamicTable_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_table_DynamicTable_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerUserSubscriptionPage_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerUserSubscriptionPage_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerUserSubscriptionPage_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_assets_lss-logo_logo_wh_png-6f77abe0d01525976e6d.js.map": {
-      "name": "src_assets_lss-logo_logo_wh_png-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_lss-logo_logo_wh_png-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerCommentSummarizePage-ListCampaign_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerCommentSummarizePage-ListCampaign_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage-ListCampaign_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-6f77abe0d01525976e6d.js.map": {
-      "name": "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerCommentSummarizePage-CommentSummarize_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerCommentSummarizePage-CommentSummarize_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage-CommentSummarize_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_components_navigation_ConsoleNavigationDrawers_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_components_navigation_ConsoleNavigationDrawers_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_navigation_ConsoleNavigationDrawers_vue-6f77abe0d01525976e6d.js.map"
+    "src_pages_seller_SellerCommentSummarizePage-ViewComments_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_pages_seller_SellerCommentSummarizePage-ViewComments_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_pages_seller_SellerCommentSummarizePage-ViewComments_vue-f4f7d30363a3848a9e64.js.map"
     },
-    "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-6f77abe0d01525976e6d.js.map": {
-      "name": "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-6f77abe0d01525976e6d.js.map"
+    "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-f4f7d30363a3848a9e64.js.map": {
+      "name": "vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_j-t-mcc_vue3-chartjs_dist_vue3-chartjs_es_js-f4f7d30363a3848a9e64.js.map"
     },
-    "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-6f77abe0d01525976e6d.js.map": {
-      "name": "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-6f77abe0d01525976e6d.js.map",
-      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-6f77abe0d01525976e6d.js.map"
+    "vendors-node_modules_jsonpath_jsonpath_js-f4f7d30363a3848a9e64.js.map": {
+      "name": "vendors-node_modules_jsonpath_jsonpath_js-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/vendors-node_modules_jsonpath_jsonpath_js-f4f7d30363a3848a9e64.js.map"
+    },
+    "src_components_table_DynamicTable_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_components_table_DynamicTable_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_table_DynamicTable_vue-f4f7d30363a3848a9e64.js.map"
+    },
+    "src_assets_lss-logo_logo_wh_png-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_assets_lss-logo_logo_wh_png-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_lss-logo_logo_wh_png-f4f7d30363a3848a9e64.js.map"
+    },
+    "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_assets_login_new-lss-carousel-1_jpeg-src_assets_login_new-lss-carousel-2_jpeg-src_compone-c90d35-f4f7d30363a3848a9e64.js.map"
+    },
+    "src_components_navigation_ConsoleNavigationDrawers_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_components_navigation_ConsoleNavigationDrawers_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_navigation_ConsoleNavigationDrawers_vue-f4f7d30363a3848a9e64.js.map"
+    },
+    "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_components_bar_SearchBar_vue-src_components_dialog_CreateFormDialog_vue-src_components_di-4c7e55-f4f7d30363a3848a9e64.js.map"
+    },
+    "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-f4f7d30363a3848a9e64.js.map": {
+      "name": "src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-f4f7d30363a3848a9e64.js.map",
+      "path": "/Users/linyilin/Desktop/lss_vue/static/webpack_bundles/src_widgets_BindFacebookPageWidgets_vue-src_widgets_BindYoutubeChannelWidgets_vue-f4f7d30363a3848a9e64.js.map"
     }
   },
   "chunks": {
     "main": [
-      "main-6f77abe0d01525976e6d.js"
+      "main-f4f7d30363a3848a9e64.js"
     ]
   }
 }
