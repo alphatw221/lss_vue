@@ -4,15 +4,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader/dist/index')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const BundleTracker = require('webpack-bundle-tracker');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   devtool:'source-map',
   context: __dirname,
-  mode:'development',
   entry: './src/main',
   output: {
     path: path.resolve(__dirname,'static/webpack_bundles'), 
-    filename: "[name]-[hash].js"
+    filename: "[name]-[fullhash].js"
   },
   module: {
     rules: [
@@ -56,6 +56,7 @@ module.exports = {
     ]
   },
   plugins:[
+    new Dotenv(),
     new VueLoaderPlugin(),
     new CleanWebpackPlugin(),
     new BundleTracker({filename: './webpack-stats.json'}),
@@ -65,7 +66,7 @@ module.exports = {
         // 'process.env.NODE_ENV': JSON.stringify('production'),
         // 'process.env': JSON.stringify(process.env),
         // 'process.env.DEBUG': JSON.stringify(process.env.DEBUG),
-        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+        // 'process.env.NODE_ENV': JSON.stringify('production')
     }),
   ],
   resolve:{

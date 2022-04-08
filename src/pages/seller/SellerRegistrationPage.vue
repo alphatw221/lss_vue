@@ -2,7 +2,7 @@
 <v-app>
 
 
-    <v-container>
+    <v-container class="my-16">
         <h1 class="text-center">
             Sign Up
         </h1>
@@ -204,7 +204,7 @@
 
                 </v-row>
 
-
+                <div class="my-10">
                 <form id="payment-form">
                     <div id="payment-element">
                         <!-- Elements will create form elements here -->
@@ -218,7 +218,7 @@
                     </div>
                     <button id="submit" style="display:hidden"></button>       
                 </form>
-
+                </div>
                 <v-row></v-row>
 
                 <v-row >
@@ -251,48 +251,20 @@
  <!-- ------------------------------------------------------------------------------------------------------------------------------------------------- -->
        
              <v-window-item value="confirmation">
-                <v-row> 
-                    <v-col>
-                        <label for="email">Email</label>
-                        <v-text-field v-model="confirmationInfo.email" readonly
-                        ></v-text-field>
-                    </v-col>
-                </v-row>
 
-                 <v-row>
-                    <v-col>
-                        <label for="plan">Plan</label>
-                        <v-text-field v-model="confirmationInfo.plan" readonly
-                        ></v-text-field>
-                    </v-col>
-
-                </v-row>
-
-                <v-row> 
-                    <v-col>
-                        <label for="period">Subscription Period</label>
-                        <v-text-field v-model="confirmationInfo.period" readonly
-                        ></v-text-field>
-                    </v-col>
-                </v-row>
-
-                 <v-row>
-                    <v-col>
-                        <label for="due">Due Date</label>
-                        <v-text-field v-model="confirmationInfo.due" readonly
-                        ></v-text-field>
-                    </v-col>
-
-                </v-row>
-
-                <v-row>
-                    <v-col>
-                        <label for="receipt_url">Receipt</label>
-                        <v-text-field v-model="confirmationInfo.receipt_url" readonly
-                        ></v-text-field>
-                    </v-col>
-
-                </v-row>
+                <v-container>
+                    <v-card>
+                        <v-container>
+                            <v-row v-for="(value,key) in confirmationInfo" v-bind:key="key">
+                                <v-col>
+                                    <label >{{key}}  :  {{value}}</label>
+                                </v-col>
+                            </v-row>
+                        </v-container>
+                        
+                    </v-card>
+                </v-container>
+                
 
             </v-window-item>
 
@@ -340,24 +312,31 @@ export default {
                 userPlan:"",
                 paymentAmount:999999999
             },
-            confirmationInfo:{},
+            confirmationInfo:{
+                "Email": "123",
+                "Password": "123",
+                "Plan": "Free Trial",
+                "Subscription Period": "Monthly",
+                "Expired At": "05/08/2022 11:48:24",
+                "Receipt": "",
+            },
             confirmPassoword:"",
             generalRules: [
-                // v => !!v || 'This field is required',
-                // v => (v && v.length <= 50) || 'This field must be less than 50 characters',
+                v => !!v || 'This field is required',
+                v => (v && v.length <= 50) || 'This field must be less than 50 characters',
             ],
             emailRules: [
-                // v => !!v || 'E-mail is required',
-                // v => /.+@.+/.test(v) || 'E-mail must be valid',
+                v => !!v || 'E-mail is required',
+                v => /.+@.+/.test(v) || 'E-mail must be valid',
             ],
             passwordRules:[
-                // v => !!v || 'Password is required',
-                // v => (v && v.length >= 8) || 'This field must be more than 8 characters',
-                // v => (v && v.length <= 50) || 'This field must be less than 50 characters',
+                v => !!v || 'Password is required',
+                v => (v && v.length >= 8) || 'This field must be more than 8 characters',
+                v => (v && v.length <= 50) || 'This field must be less than 50 characters',
             ],
             passwordMatchRules:[
-                // v => !!v || 'Confirm Password is required',
-                // v => v==this.basicInfo.password||`Password dosen't match`
+                v => !!v || 'Confirm Password is required',
+                v => v==this.basicInfo.password||`Password dosen't match`
             ],
             completeColor:"#ed2225",
             incompleteColor:"#777771",

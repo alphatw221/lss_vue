@@ -6,11 +6,11 @@ export const admin_login = data => {
 };
 
 export const seller_register_free_trail = data =>{
-    return axiosInstance.post(`/api/user/register_free_trial/`,data);
+    return axiosInstance.post(`/api/user/register/trial/`,data);
 }
 
 export const seller_validate_register = data =>{
-    return axiosInstance.post(`/api/user/validate_register/`,data);
+    return axiosInstance.post(`/api/user/register/validate/`,data);
 }
 
 export const seller_register = data =>{

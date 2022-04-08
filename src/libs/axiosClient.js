@@ -30,8 +30,7 @@ const { cookies } = useCookies();
 
 
 const axiosInstance = axios.create({
-    // baseURL: process.env.VUE_APP_ROOT_API,
-    baseURL: 'http://127.0.0.1:8000',
+    baseURL: process.env.VUE_APP_ROOT_API,
 })
 axiosInstance.interceptors.response.use(
     response => response,
@@ -44,8 +43,7 @@ axiosInstance.interceptors.response.use(
 );
 
 const axiosInstanceWithBearer = axios.create({
-    // baseURL: process.env.VUE_APP_ROOT_API,
-    baseURL: 'http://127.0.0.1:8000',
+    baseURL: process.env.VUE_APP_ROOT_API,
     headers: { 'Authorization': `Bearer ${cookies.get("access_token")}` }
 })
 axiosInstanceWithBearer.interceptors.response.use(
