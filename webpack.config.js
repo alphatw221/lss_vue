@@ -63,8 +63,9 @@ module.exports = {
         __VUE_OPTIONS_API__: true, // If you are using the options api.
         __VUE_PROD_DEVTOOLS__: false, // If you don't want people sneaking around your components in production.
         // 'process.env.NODE_ENV': JSON.stringify('production'),
-        'process.env': JSON.stringify(process.env),
+        // 'process.env': JSON.stringify(process.env),
         // 'process.env.DEBUG': JSON.stringify(process.env.DEBUG),
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
     }),
   ],
   resolve:{
